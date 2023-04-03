@@ -1,0 +1,1946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>window.__ezWillLoadCnx=1;</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=false;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],s=[],r=!0,a=function(e,i,n,o,s,r,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,c=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=s,this.deleteWhenComplete=r,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),c.isInitialized=!0,c.isComplete=!0,f("... func.apply: "+e);var i=c.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[c.funcName]),null!=n&&n.apply(null,this.parameters),!0===c.deleteWhenComplete&&delete t[e],!0===c.isBlock&&(f("----- F'D: "+c.name),u())}},l=function(e,i,t,n,o,s,r){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=s,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=r,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===s&&(t.defer=!0),t.onerror=function(){f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=r&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(s))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,r,a,c,h,f,u){var m=new l(e,i,n,r,a,c,h,u);!0===f?o[e]=m:s[e]=m,t[e]=m,d(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),s[e]=n,t[e]=n,d(n)},addFunc:function(e,n,r,l,c,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var y=new a(e,n,r,l,c,f,u,p);!0===m?o[e]=y:s[e]=y,t[e]=y,d(y)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),s[e]=o,t[e]=o,d(o)},items:t,processAll:u,setallowLoad:function(e){r=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};</script>
+<script data-ezscrex="false" data-pagespeed-no-defer data-cfasync="false" type="text/javascript">__ez.queue.addFile('fads.js', '/porpoiseant/fads.js?gcb=195-0&cb=8', true, [], true, false, false, true);</script>
+<script>window.ezslots_raw=[];var __sellerid='3b5bce4345849ac765ff023430c4b761';var __schain_domain='';var __ez_nid ='1254144';__advertiserRule=[''];var ezasVars = {'cid':'3384042430','pid':'pub-6916574607044087','ssid':44};if(typeof window.ezAutoAdsSetup == 'undefined'){window.google_reactive_ads_global_state = {
+                adCount: {},
+                floatingAdsStacking: { maxZIndexListeners: [], maxZIndexRestrictions: {}, nextRestrictionId: 0 },
+                messageValidationEnabled: false,
+                reactiveTypeDisabledByPublisher: {},
+                reactiveTypeEnabledInAsfe: {},
+                sideRailAvailableSpace: [],
+                sideRailOverlappableElements: [],
+                stateForType: {},
+                tagSpecificState: {},
+                wasPlaTagProcessed: true,
+                wasReactiveAdConfigReceived: { 1: true, 2: true, 8: true },
+                wasReactiveAdVisible: {},
+                wasReactiveTagRequestSent: true,
+                description: "Can't disable auto ads programmatically on the page, so here we are!"
+            };};var __ezasAggressive=false;!function(){window.ezasvEvent=function(e,t){if(!0===e[0].isIntersecting){var i=e[0].target.attributes[0].value.substr(0,e[0].target.attributes[0].value.length-9);window.ezoSTPixelAdd(i,"viewed",1),t.disconnect()}},window.ezaslEvent=function(e,t){if(void 0!==e[0].target.attributes["data-ad-status"]){var i=e[0].target.attributes["data-ad-status"].value,o=e[0].target.attributes[0].value.substr(0,e[0].target.attributes[0].value.length-9);"filled"==i&&(window.ezoSTPixelAdd(o,"loaded",1),new IntersectionObserver(window.ezasvEvent,{threshold:[1]}).observe(document.getElementById(o+"-asloaded"))),"unfilled"==i&&setTimeout((function(){window.ezoAdBackFill(e)}),2e3),t.disconnect()}},window.ezoAdBackFill=function(e){var t=e[0].target,i=t.parentElement;t.style.display="none !important";var o,d=ezoGetSlotNum(i.id);if(o=void 0!==__ez.fads?__ez.fads.initslots[i.id]:__ez_fad_initslot[i.id],void 0===d&&"function"==typeof o&&(d=o(6)),void 0!==d)var n=window[d];if(void 0!==n){n.setTargeting("compid","0"),n.setTargeting("bkfl","1"),n.setTargeting("reft","t");var a=n.getTargeting("br2")[0];void 0!==window.ezoibfh&&void 0!==window.ezoibfh[a]&&(n.setTargeting("br1",a),n.setTargeting("eb_br",window.ezoibfh[a])),googletag.display(n),setTimeout((function(){googletag.pubads().refresh([n])}),500)}},window.ezoSTPixels=[];var e=setInterval((function(){"undefined"!=typeof __ez&&"undefined"!=typeof __ezDotData&&"undefined"!=typeof ezslots&&window.ezslots_raw.length>0&&(window.ezoSTPixelFire(),clearInterval(e))}),250);window.ezoSTPixelAdd=function(e,t,i){window.ezoSTPixels.push({id:e,name:t,value:i}),window.ezoSTPixelFire()},window.ezoGetSlotById=function(e){var t=e.split("div-gpt-ad-")[1].split("-",3).join("-");for(s in window.ezslots_raw)if(window.ezslots_raw[s].tap.includes(t))return window.ezslots_raw[s]},window.ezoGetSlotNum=function(e){if(void 0!==window.ezslots&&0!=window.ezslots)for(var t=0;t<window.ezslots.length;t++){var i=window[ezslots[t]];if(void 0!==i){var o=i.getSlotElementId();if(void 0!==o&&o==e)return ezslots[t]}}},window.ezoSTPixelFire=function(){if("undefined"!=typeof __ez&&"undefined"!=typeof __ezDotData&&"undefined"!=typeof ezslots)for(;window.ezoSTPixels.length>0;){var e=window.ezoSTPixels.shift(),t=window.ezoGetSlotById(e.id);if(void 0===t){var i;if(i=void 0!==__ez.fads?__ez.fads.initslots[e.id]:__ez_fad_initslot[e.id],void 0===googletag.defineSlot)return void window.ezoSTPixels.push(e);if(i(1),void 0===(t=window.ezoGetSlotById(e.id)))return void window.ezoSTPixels.push(e)}var o=[{type:"impression",impression_id:t.eid,domain_id:window.did.toString(),unit:e.id,t_epoch:__ez.dot.getEpoch(0),ad_position:parseInt(t.ap),country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:1,data:__ez.dot.dataToStr([new __ezDotData(e.name,e.value.toString())]),is_orig:0}],d=__ez.dot.getURL("/porpoiseant/army.gif")+"?orig=0&sts="+btoa(JSON.stringify(o));__ez.dot.Fire(d)}}}();</script>
+<script>!function(){var e=setInterval((function(){var t=document.querySelectorAll('[id^="outbrain_widget_"]');0!==t.length&&(function(e){e.forEach((function(e){if(e.parentElement.hasAttribute("data-ez-name")){var t=e.parentElement.attributes["data-ez-name"].value;new IntersectionObserver((function(e,i){e[0].isIntersecting&&(n({unit:t,name:"viewed"}),i.disconnect())}),{threshold:[1]}).observe(e);var i=e.attributes["data-widget-id"].value;window.OBREvents=window.OBREvents||[],OBREvents.push({event:"widgetDataReturned",widgetId:i,func:function(){n({unit:t,name:"loaded"})}})}}))}(t),clearInterval(e))}),250),t=[],i=setInterval((function(){"undefined"!=typeof __ez&&"undefined"!=typeof _ezim_d&&"undefined"!=typeof __ezDotData&&(o(),clearInterval(i))}),2500);function n(e){t.push(e),o()}var d="/porpoiseant/army.gif";function o(){var e,i;if(0!==t.length&&"undefined"!=typeof __ez&&"undefined"!=typeof _ezim_d&&"undefined"!=typeof __ezDotData)for(;t.length>0;){var n=t.shift(),o=(e=n.unit,i=n.name,[{type:"impression",impression_id:_ezim_d[e].full_id.split("/")[2],domain_id:window.did.toString(),unit:e,t_epoch:__ez.dot.getEpoch(0),ad_position:_ezim_d[e].position_id,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:2,data:__ez.dot.dataToStr([new __ezDotData(i,"1")]),is_orig:0}]),a=__ez.dot.getURL(d)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(o));void 0!==window.ezWp&&ezWp&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("visit_uuid")&&(a+="&visit_uuid="+window.visit_uuid),__ez.dot.Fire(a)}}}();</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
+<script>window.ezhbopt=true;</script>
+<script>window.ezpbCache=true;</script>
+<link href="//ad.doubleclick.net" rel="dns-prefetch">
+<link href="//pagead2.googlesyndication.com" rel="dns-prefetch">
+<link href="//googleads.g.doubleclick.net" rel="dns-prefetch">
+<link href="//tpc.googlesyndication.com" rel="dns-prefetch">
+<link href="//adservice.google.com" rel="dns-prefetch">
+<link href="//secureads.g.doubleclick.net" rel="dns-prefetch">
+<link href="//www.googletagservices.com" rel="dns-prefetch">
+<link rel='preload' as='script' href='//securepubads.g.doubleclick.net/tag/js/gpt.js'>
+<link rel='preload' as='script' href='//go.ezodn.com/hb/dall.js?cb=195-0-53' onerror="window.ezDallErr=true">
+<link rel='preload' as='script' href='/porpoiseant/fads.js?gcb=195-0&cb=8'>
+<script type="text/javascript">
+	var __banger_pmp_deals=function(){var d={18:{"DealId":18,"Floor":25},1428:{"DealId":1428,"Floor":25},2693:{"DealId":2693,"Floor":50},3052:{"DealId":3052,"Floor":20},3053:{"DealId":3053,"Floor":37},3856:{"DealId":3856,"Floor":15},3045:{"DealId":3045,"Floor":75},4276:{"DealId":4276,"Floor":65},19:{"DealId":19,"Floor":100},2688:{"DealId":2688,"Floor":100}};return[{"SlotName":"/1254144,21994108754/acordesweb_com-edge-1","Deals":[d[18],d[1428],d[2693],d[3052],d[3053],d[3856]]},{"SlotName":"/1254144,21994108754/acordesweb_com-leader-3","Deals":[d[18],d[1428],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-box-3","Deals":[d[18],d[19],d[1428],d[2688],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-box-2","Deals":[d[18],d[1428],d[2693],d[3052],d[3053],d[3856]]},{"SlotName":"/1254144,21994108754/acordesweb_com-medrectangle-2","Deals":[d[18],d[1428],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-banner-1","Deals":[d[18],d[1428],d[2693],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-large-leaderboard-2","Deals":[d[18],d[1428],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-medrectangle-4","Deals":[d[18],d[1428],d[2693],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-box-4","Deals":[d[18],d[1428],d[3052],d[3856]]},{"SlotName":"/1254144,21994108754/acordesweb_com-large-mobile-banner-1","Deals":[d[18],d[1428],d[2693],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-large-mobile-banner-2","Deals":[d[18],d[1428],d[2693],d[3052],d[3053],d[3856]]},{"SlotName":"/1254144,21994108754/acordesweb_com-leader-1","Deals":[d[18],d[1428],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-leader-2","Deals":[d[18],d[1428],d[2693],d[3052],d[3053],d[3856]]},{"SlotName":"/1254144,21994108754/acordesweb_com-box-3","Deals":[d[18],d[19],d[1428],d[2688],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-leader-1","Deals":[d[18],d[1428],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-box-3","Deals":[d[18],d[19],d[1428],d[2688],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-leader-3","Deals":[d[18],d[1428],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]},{"SlotName":"/1254144,21994108754/acordesweb_com-edge-2","Deals":[]},{"SlotName":"/1254144,21994108754/acordesweb_com-leader-3","Deals":[d[18],d[1428],d[2693],d[3045],d[3052],d[3053],d[3856],d[4276]]}]}();
+</script>
+<script type='text/javascript'>_ebcids=[138231308856,138231308940,138231308949,138231387842,138231421744,138231421759,138231421774,138231421783,138231421789,138231421792,138242067587,138242067590,138242067602,138242067605,138242067608,138242067614,138242229406,138242229415,138242229421,138242229430];</script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>ezobv=198;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>__ez.fads=window.__ez.fads||{cmd:[],initslots:{},kvStore:{},divs:[[],[],[],[],[],[],[]],divsd:[],fadcount:0};var ez_ad_units=[];var ezslots=[];var ezrpos=[];var ezsrqt={};var __ez_fad_haspo=false;var __ez_fad_hascp=false;if(typeof PerformanceObserver!='undefined'&&typeof PerformanceObserver.supportedEntryTypes!='undefined'){if(PerformanceObserver.supportedEntryTypes.indexOf('largest-contentful-paint')>-1){__ez_fad_haspo=true;}}
+try{var __ez_fad_po=new PerformanceObserver((entryList)=>{window.__ez_fad_hascp=true;__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_hascp=true;});});__ez_fad_po.observe({type:'largest-contentful-paint',buffered:true});}catch(e){}
+var __ez_fad_floatshowd=false;__ez.fads.__ez_fad_floatshow=function(d){if(__ez_fad_floatshowd===true||typeof __ez_fad_floating==='undefined'){return;}
+__ez_fad_floatshowd=true;var e=document.getElementById('ezmobfooter');if(e!=null){e.classList.add('ezmobtrans');}else{head=document.head||document.getElementsByTagName('head')[0],style=document.createElement('style');head.appendChild(style);var css="body > #ezmobfooter{bottom:0px;visibility:visible;}";style.type='text/css';if(style.styleSheet){style.styleSheet.cssText=css;}else{style.appendChild(document.createTextNode(css));}}
+googletag.cmd.push(function(){for(var i=0;i<__ez_fad_floating.length;i++){var s=__ez.fads.initslots[__ez_fad_floating[i]](null);googletag.display(__ez_fad_floating[i]);if(typeof window.adjustHbValues==='function'){window.adjustHbValues(window[s]);}
+if(typeof window.__ezWillLoadCnx!=='undefined'&&window[s].getTargeting('al')[0]=='1039'){window.__ezsbwcmd=window.__ezsbwcmd||[];let sr=[window[s]];window.__ezsbwcmd.push(function(){if(typeof __ezcnxPlayer==='undefined'||!__ezcnxPlayer.getSize()){googletag.pubads().refresh(sr);}else{__ezcnxPlayer.once('removed',function(){googletag.pubads().refresh(sr);})}});continue;}
+googletag.pubads().refresh([window[s]]);}});};function __ez_fad_csnt(){return document.cookie.indexOf('ezCMPCookieConsent')!==-1||typeof __ez_conestreq=='undefined';}
+function __ez_fad_rdy(){var h=document.documentElement.scrollHeight;var vh=window.innerHeight||Math.max(document.documentElement.clientHeight,document.body.clientHeight);if(document.body!==null&&(__ez_fad_haspo===false&&h>vh||__ez_fad_hascp||document.readyState==='complete')){return true;}}
+function __ez_fad_position(id){if(__ez.fads.loaded){__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_position(id);});return;}
+__ez.fads.fadcount++;var did=document.getElementById(id);if(did===null){return;}
+var rect=did.getBoundingClientRect();var vs=window.scrollY||document.body.scrollTop||document.documentElement.scrollTop;var vh=vs+window.screen.height;var vw=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;var vh=window.innerHeight||Math.max(document.documentElement.clientHeight,document.body.clientHeight);if(rect.top>=vh){__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_position(id);});return;}
+__ez.fads.divs[0].push(id);__ez.fads.divsd.push(id);if(!__ez_fad_csnt()||!__ez_fad_rdy()){setTimeout(function(){__ez_fad_display(id);},50);return;}
+__ez_fad_display(id);}
+function __ez_fad_display(id){if(!__ez_fad_csnt()||!__ez_fad_rdy()){setTimeout(function(){__ez_fad_display(id);},50);return;}
+__ez_fad_gpt();if(__ez_fad_floating.indexOf(id)!==-1){setTimeout(__ez.fads.__ez_fad_floatshow,0);return;}
+googletag.cmd.push(function(){var sn=__ez.fads.initslots[id](0);if(!sn){return;}
+var s=window[sn];googletag.display(id);if(typeof window.ezasBuild==='function'){if(window.ezasBuild(s)){return;}}
+if(typeof window.adjustHbValues==='function'){window.adjustHbValues(s);}
+googletag.pubads().refresh([s]);});}
+function ezSetTargetingFromMap(slot,obj){if(typeof slot==='undefined'){return;}
+for(var key in obj){if(!obj.hasOwnProperty(key)){continue;}
+slot.setTargeting(key,obj[key]);}}
+function ezSetSlotTargeting(divid,key,value){var slot=ezGetSlotById(divid);if(slot){slot.setTargeting(key,value);}else{if(typeof __ez.fads.kvStore[divid]=='undefined'){__ez.fads.kvStore[divid]={};}
+__ez.fads.kvStore[divid][key]=value;}}
+function ezGetSlotById(id){if(typeof window.ezslots==='undefined'||window.ezslots==0){return;}
+for(var i=0;i<window.ezslots.length;i++){var slot=window[ezslots[i]];if(typeof slot==='undefined'){continue;}
+var slotId=slot.getSlotElementId();if(typeof slotId!=='undefined'&&slotId==id){return slot;}}}
+function __ez_close_anchor(){googletag.cmd.push(function(slot){for(var i=0;i<window.ezslots.length;i++){var slot=window[ezslots[i]];if(typeof slot==='undefined'){continue;}
+var alS=slot.getTargeting('al')[0]%1000;if(alS==5){googletag.destroySlots([slot]);}}
+if(typeof window.ezdomain!=='undefined'){var d=new Date();d.setTime(d.getTime()+(2*60*60*1000));var expires="expires="+d.toGMTString();let cookie="ez_anchor_closed=true;domain=."+ezdomain+';'+expires+"; path=/";document.cookie=cookie;}
+if(typeof(__ez_set_outstream_floor)!=='undefined'){__ez_set_outstream_floor(0);}
+var anchor=document.getElementById('ezmobfooter');if(!anchor){return;}
+anchor.innerHTML='';var styleElement=document.getElementById('ezoicCSS');if(!styleElement){return;}
+var cert=document.getElementById('ezoic-certification-fixed');if(cert){cert.style.bottom='15px';}
+var styles=styleElement.sheet?styleElement.sheet:styleElement.styleSheet;for(var i=0;i<styles.cssRules.length;i++){var rules=styles.cssRules[i];if(rules.selectorText==='body'&&rules.style.height==='auto'&&(rules.style.paddingTop!==''||rules.style.paddingBottom!=='')){styles.deleteRule(i);}}});}</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;window.ezoViewCheck=false;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.googletag=window.googletag||{};googletag.cmd=googletag.cmd||[];</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezogetbrkey = function(s){ var k = 'br1';var k2 = 'eb_br';if(window.ezogtk == ""){k='br1u';k2='eb_bru';}else if(window.ezogtk != "NT"){k='br1t';k2='eb_brt';} s.setTargeting('br1', s.getTargeting(k));s.setTargeting('eb_br', s.getTargeting(k2));};googletag.cmd.push(function() {ezslot_interstitial = googletag.defineOutOfPageSlot('/1254144,21994108754/acordesweb_com-pixel1',googletag.enums.OutOfPageFormat.INTERSTITIAL); if(ezslot_interstitial != null) {ezslot_interstitial.addService(googletag.pubads()).setTargeting('reft', 'n').setTargeting('eb_br', '23b5ca1d9de2587e6a4ecfd33d61b709').setTargeting('br2', '26').setTargeting('ga', '2497208').setTargeting('iid1', '2626019564734839').setTargeting('bvr', '8').setTargeting('ap', '9999').setTargeting('al', '1006').setTargeting('ic', '1').setTargeting('ezoic', '1').setTargeting('tap', 'acordesweb_com-pixel1-2626019564734839').setTargeting('bra', 'mod15-c').setTargeting('br1', '38').setTargeting('d', '391487');}
+			googletag.pubads().enableSingleRequest();googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotResponseReceived', function(event) { __ez.queue.addFunc("ezsr", "ezsr", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotRequested', function(e) { window.ezsrqt[e.slot.getSlotElementId()] = Date.now();});googletag.pubads().disableInitialLoad();googletag.pubads().enableLazyLoad({fetchMarginPercent: 400, renderMarginPercent: 100, mobileScaling: 2.0});googletag.enableServices();});window.ezoll = false;window.ezoadxnc = '1254144';window.ezoadhb = '120';var ezaxmns={};var ezaucmns={};
+
+		var __ez_fad_floating = ['div-gpt-ad-acordesweb_com-medrectangle-2-0','div-gpt-ad-acordesweb_com-edge-1-0','div-gpt-ad-acordesweb_com-edge-2-0'];
+		var __ez_fad_gptd = __ez_fad_gptd || false;var __ez_fad_ezpbinitd = false;var __ez_fad_pbt = setTimeout(function(){__ez_fad_pb();},5000);function __ez_fad_gpt(){if(__ez_fad_gptd == false){__ez_fad_gptd=true;!function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//securepubads.g.doubleclick.net/tag/js/gpt.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(t,c)}();}}function __ez_fad_pb(){if(__ez_fad_ezpbinitd==false && typeof __ez_fad_ezpbinit == 'function'){__ez_fad_ezpbinitd = true;__ez_fad_ezpbinit()}};
+		
+	function __ez_init_slot(bvr, did, slotNum, defineFunc) {
+		googletag.cmd.push(function() {
+			defineFunc();
+			ezrpos[slotNum]=slotNum;
+			ezslots.push("ezslot_" + slotNum);
+			if(__ez.fads.kvStore[did] !== 'undefined') {
+				for (var name in __ez.fads.kvStore[did]) {
+					if (!__ez.fads.kvStore.hasOwnProperty(name)) {
+						ezSetSlotTargeting(did, name, __ez.fads.kvStore[did][name]);
+					}
+				}
+				__ez.fads.kvStore[did] = {};
+			}
+		});return "ezslot_" + slotNum;
+	}
+__ez.fads.initslots['div-gpt-ad-acordesweb_com-box-2-0'] = function(bvr){
+				var defScript = function() {ezslot_9 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-box-2',[728,90],'div-gpt-ad-acordesweb_com-box-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_9_raw = {'a':'1','iid1':'5838194356677578','eid':'5838194356677578','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1168','sap':'1168','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'9','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'1','al':'1001','compid':'0','tap':'acordesweb_com-box-2-5838194356677578','eb_br':'3ba982fc4238dd4197b1d51b345478dc','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','acptad':'1','br1':'50','br2':'26','ezoic':'1','nmau':'0','mau':'0','stl':[157,14,0,196,0,193,196,20,71,201,192,31,902,903,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3045,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,4276,783,3,4]}; window.ezslots_raw.push( ezslot_9_raw);ezSetTargetingFromMap(ezslot_9,ezslot_9_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-box-2-0',9, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-large-mobile-banner-2-0'] = function(bvr){
+				var defScript = function() {ezslot_14 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-large-mobile-banner-2',[[580,400],[300,250],[320,50],[468,60],[120,240],[180,150],[234,60],[728,90],[250,250],[320,100],[200,200],[970,90],[970,250],[125,125],['fluid']],'div-gpt-ad-acordesweb_com-large-mobile-banner-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_14_raw = {'a':'1','iid1':'7647459526678868','eid':'7647459526678868','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1700','sap':'1700','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'14','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'700','al':'1700','compid':'0','tap':'acordesweb_com-large-mobile-banner-2-7647459526678868','eb_br':'c352ba581bd3ffd8cea608cf2d55f519','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','br1':'60','br2':'28','ezoic':'1','nmau':'0','mau':'0','stl':[40,206,28,67,51,192,81,20,26,156,205,0,124,159,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3045,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,4276,783,3,4]}; window.ezslots_raw.push( ezslot_14_raw);ezSetTargetingFromMap(ezslot_14,ezslot_14_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-large-mobile-banner-2-0',14, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-medrectangle-4-0'] = function(bvr){
+				var defScript = function() {ezslot_13 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-medrectangle-4',[[300,250],[250,250],[468,60],[200,200],[970,90],[180,150],[728,90],[320,100],[120,240],[970,250],[125,125],[234,60],[320,50]],'div-gpt-ad-acordesweb_com-medrectangle-4-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_13_raw = {'a':'1','iid1':'7774733492745530','eid':'7774733492745530','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1022','sap':'1340','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'13','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'22','al':'1022','compid':'1','tap':'acordesweb_com-medrectangle-4-7774733492745530','eb_br':'60474211daf1dfd4d90000ea01f56c30','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','br1':'0','br2':'34','ezoic':'1','nmau':'0','mau':'0','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3045,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_13_raw);ezSetTargetingFromMap(ezslot_13,ezslot_13_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-medrectangle-4-0',13, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-box-4-0'] = function(bvr){
+				var defScript = function() {ezslot_3 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-box-4',[[970,250],[728,90],[320,50],[234,60],[970,90],[180,150],[300,250],[250,250],[468,60],[320,100],[120,240],[200,200],[125,125],['fluid']],'div-gpt-ad-acordesweb_com-box-4-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_3_raw = {'a':'1','iid1':'4728296838714577','eid':'4728296838714577','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1148','sap':'1148','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'3','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'3','al':'1003','compid':'0','tap':'acordesweb_com-box-4-4728296838714577','eb_br':'674294a1b21a1e89fc99c14c9b17be44','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','br1':'28','br2':'14','ezoic':'1','nmau':'0','mau':'0','stl':[77,131,0,192,0,168,192,192,196,209,187,84,901,182,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,919,1794,2310,2339,2351,2526,2527,2610,2688,2693,2761,2763,2764,2765,3044,3045,3053,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,3933,4184,4185,4186,4276,4605,783,3,4]}; window.ezslots_raw.push( ezslot_3_raw);ezSetTargetingFromMap(ezslot_3,ezslot_3_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-box-4-0',3, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-large-mobile-banner-1-0'] = function(bvr){
+				var defScript = function() {ezslot_8 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-large-mobile-banner-1',[[250,250],[970,250],[180,150],[125,125],[320,50],[468,60],[320,100],[120,240],[200,200],[970,90],[234,60],[728,90],[300,250],['fluid']],'div-gpt-ad-acordesweb_com-large-mobile-banner-1-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_8_raw = {'a':'1','iid1':'6756833628672012','eid':'6756833628672012','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1116','sap':'1116','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'8','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'702','al':'1702','compid':'0','tap':'acordesweb_com-large-mobile-banner-1-6756833628672012','eb_br':'527e52c10635ac8136a4c84094ee49a8','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','br1':'70','br2':'34','ezoic':'1','nmau':'0','mau':'0','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,919,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3045,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_8_raw);ezSetTargetingFromMap(ezslot_8,ezslot_8_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-large-mobile-banner-1-0',8, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-large-leaderboard-2-0'] = function(bvr){
+				var defScript = function() {ezslot_7 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-large-leaderboard-2',[[250,250],[120,240],[125,125],[234,60],[320,50],[300,250],[468,60],[320,100],[200,200],[970,90],[970,250],[180,150],[728,90],['fluid']],'div-gpt-ad-acordesweb_com-large-leaderboard-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_7_raw = {'a':'1','iid1':'5924107890680211','eid':'5924107890680211','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1140','sap':'1140','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'7','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'36','al':'1036','compid':'0','tap':'acordesweb_com-large-leaderboard-2-5924107890680211','eb_br':'dfa60cee6e1053fc0c9e607c8047bd28','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','br1':'80','br2':'42','ezoic':'1','nmau':'0','mau':'0','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,3933,4184,4185,4186,4604,4605,783,3,4]}; window.ezslots_raw.push( ezslot_7_raw);ezSetTargetingFromMap(ezslot_7,ezslot_7_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-large-leaderboard-2-0',7, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-box-3-0'] = function(bvr){
+				var defScript = function() {ezslot_4 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-box-3',[300,250],'div-gpt-ad-acordesweb_com-box-3-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_4_raw = {'a':'1','iid1':'7154506198690137','eid':'7154506198690137','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1141','sap':'1141','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'4','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'2','al':'1002','compid':'0','tap':'acordesweb_com-box-3-7154506198690137','eb_br':'58ef7bddb438af5e257c4377f32c243a','eba':'1','ebss':[10061,10015,11307],'bv':'5','bvm':'0','bvr':'5','shp':'3','ftsn':'12','ftsng':'12','br1':'120','br2':'60','ezoic':'1','nmau':'3','mau':'0','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,20,21,22,23,24,25,26,919,1794,2310,2339,2351,2526,2527,2610,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,4605,783,3,4]}; window.ezslots_raw.push( ezslot_4_raw);ezSetTargetingFromMap(ezslot_4,ezslot_4_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-box-3-0',4, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-box-3-0_1'] = function(bvr){
+				var defScript = function() {ezslot_5 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-box-3',[300,250],'div-gpt-ad-acordesweb_com-box-3-0_1').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_5_raw = {'a':'1','iid1':'7154506198690137','eid':'7154506198690137','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1141','sap':'1141','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'5','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'2','al':'1002','compid':'0','tap':'acordesweb_com-box-3-7154506198690137','eb_br':'58ef7bddb438af5e257c4377f32c243a','eba':'1','ebss':[10061,10015,11307],'bv':'5','bvm':'0','bvr':'5','shp':'3','ftsn':'12','ftsng':'12','br1':'120','br2':'60','ezoic':'1','nmau':'3','mau':'1','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,20,21,22,23,24,25,26,919,1794,2310,2339,2351,2526,2527,2610,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,4605,783,3,4]}; window.ezslots_raw.push( ezslot_5_raw);ezSetTargetingFromMap(ezslot_5,ezslot_5_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-box-3-0_1',5, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-box-3-0_2'] = function(bvr){
+				var defScript = function() {ezslot_6 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-box-3',[300,250],'div-gpt-ad-acordesweb_com-box-3-0_2').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_6_raw = {'a':'1','iid1':'7154506198690137','eid':'7154506198690137','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1141','sap':'1141','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'6','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'2','al':'1002','compid':'0','tap':'acordesweb_com-box-3-7154506198690137','eb_br':'58ef7bddb438af5e257c4377f32c243a','eba':'1','ebss':[10061,10015,11307],'bv':'5','bvm':'0','bvr':'5','shp':'3','ftsn':'12','ftsng':'12','br1':'120','br2':'60','ezoic':'1','nmau':'3','mau':'2','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,20,21,22,23,24,25,26,919,1794,2310,2339,2351,2526,2527,2610,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,4605,783,3,4]}; window.ezslots_raw.push( ezslot_6_raw);ezSetTargetingFromMap(ezslot_6,ezslot_6_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-box-3-0_2',6, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-leader-1-0'] = function(bvr){
+				var defScript = function() {ezslot_11 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-leader-1',[[250,250], ['fluid']],'div-gpt-ad-acordesweb_com-leader-1-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_11_raw = {'a':'1','iid1':'1701551434668219','eid':'1701551434668219','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1037','sap':'1560','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'11','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'37','al':'1037','compid':'0','tap':'acordesweb_com-leader-1-1701551434668219','eb_br':'b355e9227b551c119a30a68852723b62','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'3','ftsn':'12','ftsng':'12','br1':'90','br2':'46','ezoic':'1','nmau':'2','mau':'0','stl':[157,193,0,196,0,193,196,20,71,201,192,31,902,903,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_11_raw);ezSetTargetingFromMap(ezslot_11,ezslot_11_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-leader-1-0',11, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-leader-1-0_1'] = function(bvr){
+				var defScript = function() {ezslot_12 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-leader-1',[[250,250], ['fluid']],'div-gpt-ad-acordesweb_com-leader-1-0_1').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_12_raw = {'a':'1','iid1':'1701551434668219','eid':'1701551434668219','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1037','sap':'1560','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'12','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'37','al':'1037','compid':'0','tap':'acordesweb_com-leader-1-1701551434668219','eb_br':'b355e9227b551c119a30a68852723b62','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'3','ftsn':'12','ftsng':'12','br1':'90','br2':'46','ezoic':'1','nmau':'2','mau':'1','stl':[157,193,0,196,0,193,196,20,71,201,192,31,902,903,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_12_raw);ezSetTargetingFromMap(ezslot_12,ezslot_12_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-leader-1-0_1',12, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-leader-3-0'] = function(bvr){
+				var defScript = function() {ezslot_16 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-leader-3',[[300,250], ['fluid']],'div-gpt-ad-acordesweb_com-leader-3-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_16_raw = {'a':'1','iid1':'4705874994718053','eid':'4705874994718053','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1701','sap':'1701','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'16','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'701','al':'1701','compid':'0','tap':'acordesweb_com-leader-3-4705874994718053','eb_br':'dfa60cee6e1053fc0c9e607c8047bd28','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'3','ftsn':'12','ftsng':'12','br1':'80','br2':'40','ezoic':'1','nmau':'3','mau':'0','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_16_raw);ezSetTargetingFromMap(ezslot_16,ezslot_16_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-leader-3-0',16, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-leader-3-0_1'] = function(bvr){
+				var defScript = function() {ezslot_17 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-leader-3',[[300,250], ['fluid']],'div-gpt-ad-acordesweb_com-leader-3-0_1').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_17_raw = {'a':'1','iid1':'4705874994718053','eid':'4705874994718053','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1701','sap':'1701','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'17','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'701','al':'1701','compid':'0','tap':'acordesweb_com-leader-3-4705874994718053','eb_br':'dfa60cee6e1053fc0c9e607c8047bd28','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'3','ftsn':'12','ftsng':'12','br1':'80','br2':'40','ezoic':'1','nmau':'3','mau':'1','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_17_raw);ezSetTargetingFromMap(ezslot_17,ezslot_17_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-leader-3-0_1',17, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-leader-3-0_2'] = function(bvr){
+				var defScript = function() {ezslot_18 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-leader-3',[[300,250], ['fluid']],'div-gpt-ad-acordesweb_com-leader-3-0_2').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_18_raw = {'a':'1','iid1':'4705874994718053','eid':'4705874994718053','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1701','sap':'1701','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'18','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'701','al':'1701','compid':'0','tap':'acordesweb_com-leader-3-4705874994718053','eb_br':'dfa60cee6e1053fc0c9e607c8047bd28','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'3','ftsn':'12','ftsng':'12','br1':'80','br2':'40','ezoic':'1','nmau':'3','mau':'2','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_18_raw);ezSetTargetingFromMap(ezslot_18,ezslot_18_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-leader-3-0_2',18, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-medrectangle-2-0'] = function(bvr){
+				var defScript = function() {ezslot_2 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-medrectangle-2',[728,90],'div-gpt-ad-acordesweb_com-medrectangle-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_2_raw = {'a':'1','iid1':'7806681506731828','eid':'7806681506731828','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1100','sap':'1100','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'2','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'5','al':'1005','compid':'0','tap':'acordesweb_com-medrectangle-2-7806681506731828','eb_br':'dfa60cee6e1053fc0c9e607c8047bd28','eba':'1','ebss':[10061,10015,11307],'bv':'5','bvm':'0','bvr':'5','shp':'1','ftsn':'12','ftsng':'12','br1':'80','br2':'40','ezoic':'1','nmau':'0','mau':'0','stl':[157,131,0,196,0,193,196,20,71,201,192,31,902,903,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,27,28,29,30,760,761,813,815,816,817,818,819,893,899,917,918,919,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,3919,3933,4184,4185,4186,4604,4605,783,3,4]}; window.ezslots_raw.push( ezslot_2_raw);ezSetTargetingFromMap(ezslot_2,ezslot_2_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-medrectangle-2-0',2, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-banner-1-0'] = function(bvr){
+				var defScript = function() {ezslot_10 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-banner-1',[[970,90],[300,250],[320,50],[250,250],[468,60],[320,100],[120,240],[200,200],[728,90],[180,150],[234,60],[970,250],[125,125],['fluid']],'div-gpt-ad-acordesweb_com-banner-1-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_10_raw = {'a':'1','iid1':'7795289466686384','eid':'7795289466686384','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1030','sap':'1360','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'10','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'30','al':'1030','compid':'0','tap':'acordesweb_com-banner-1-7795289466686384','eb_br':'527e52c10635ac8136a4c84094ee49a8','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','br1':'70','br2':'34','ezoic':'1','nmau':'0','mau':'0','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3045,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,783,3,4]}; window.ezslots_raw.push( ezslot_10_raw);ezSetTargetingFromMap(ezslot_10,ezslot_10_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-banner-1-0',10, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-edge-1-0'] = function(bvr){
+				var defScript = function() {ezslot_1 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-edge-1',[160,600],'div-gpt-ad-acordesweb_com-edge-1-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_1_raw = {'a':'1','iid1':'2456176188711010','eid':'2456176188711010','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1169','sap':'1169','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'1','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'38','al':'1038','compid':'0','tap':'acordesweb_com-edge-1-2456176188711010','eb_br':'c352ba581bd3ffd8cea608cf2d55f519','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'2','ftsn':'12','ftsng':'12','br1':'60','br2':'28','ezoic':'1','nmau':'0','mau':'0','sticky':'1','stl':[157,193,0,196,0,193,196,20,71,201,192,31,902,903,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3045,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,4276,783,3,4]}; window.ezslots_raw.push( ezslot_1_raw);ezSetTargetingFromMap(ezslot_1,ezslot_1_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-edge-1-0',1, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-edge-2-0'] = function(bvr){
+				var defScript = function() {ezslot_0 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-edge-2',[160,600],'div-gpt-ad-acordesweb_com-edge-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_0_raw = {'a':'1','iid1':'4474452324705568','eid':'4474452324705568','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1170','sap':'1170','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'0','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'39','al':'1039','compid':'0','tap':'acordesweb_com-edge-2-4474452324705568','eb_br':'291d27313eb66c50243129b23df8a579','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'2','ftsn':'12','ftsng':'12','br1':'10','br2':'6','ezoic':'1','nmau':'0','mau':'0','sticky':'1','stl':[146,206,207,27,195,192,91,20,26,171,175,0,124,199,901,902,903],'deal1':[17,18,19,20,21,22,23,24,25,26,1428,1794,2310,2339,2351,2526,2527,2610,2688,2693,2761,2763,2764,2765,3044,3045,3052,3053,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,3856,4184,4185,4186,4276,783,3,4]}; window.ezslots_raw.push( ezslot_0_raw);ezSetTargetingFromMap(ezslot_0,ezslot_0_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-edge-2-0',0, defScript);
+			};__ez.fads.initslots['div-gpt-ad-acordesweb_com-leader-2-0'] = function(bvr){
+				var defScript = function() {ezslot_15 = googletag.defineSlot('/1254144,21994108754/acordesweb_com-leader-2',[[970,90],[728,90],[300,250],[120,240],[200,200],[180,150],[125,125],[320,50],[250,250],[468,60],[320,100],[970,250],[234,60],['fluid']],'div-gpt-ad-acordesweb_com-leader-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(false);var ezslot_15_raw = {'a':'1','iid1':'2313216376737334','eid':'2313216376737334','t':'134','d':'391487','t1':'134','pvc':'0','ap':'1703','sap':'1703','a':'|0|','as':'revenue','plat':'1','bra':'mod15-c','ic':'1','at':'mbf','adr':'399','ezosn':'15','reft':'tf','refs':'30','refa':'1','ga':'2497208','gala':'','rid':'99998','pt':'703','al':'1703','compid':'0','tap':'acordesweb_com-leader-2-2313216376737334','eb_br':'c352ba581bd3ffd8cea608cf2d55f519','eba':'1','ebss':[10061,10015,11307],'bv':'2','bvm':'0','bvr':'6','shp':'1','ftsn':'12','ftsng':'12','br1':'60','br2':'32','ezoic':'1','nmau':'0','mau':'0','stl':[63,14,28,4,51,0,88,0,71,30,0,31,901,902,903],'deal1':[17,19,20,21,22,23,24,25,26,1794,2310,2339,2351,2526,2527,2610,2688,2761,2763,2764,2765,3044,3045,3054,3154,3430,3455,3456,3457,3458,3460,3682,3683,3684,4184,4185,4186,4276,783,3,4]}; window.ezslots_raw.push( ezslot_15_raw);ezSetTargetingFromMap(ezslot_15,ezslot_15_raw);};
+				return __ez_init_slot(bvr,'div-gpt-ad-acordesweb_com-leader-2-0',15, defScript);
+			};</script>
+<script type="text/javascript">(function(){function storageAvailable(type){var storage;try{storage=window[type];var x='__storage_test__';storage.setItem(x,x);storage.removeItem(x);return true;}
+catch(e){return e instanceof DOMException&&(e.code===22||e.code===1014||e.name==='QuotaExceededError'||e.name==='NS_ERROR_DOM_QUOTA_REACHED')&&(storage&&storage.length!==0);}}
+function remove_ama_config(){if(storageAvailable('localStorage')){localStorage.removeItem("google_ama_config");}}
+remove_ama_config()})()</script>
+<script type="text/javascript">var ezoicTestActive = true</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod15-c","ad_cache_level":1,"ad_count_adjustment":1,"ad_lazyload_version":5,"ad_load_version":1,"ad_location_ids":"6,39,38,5,3,2,2,2,36,702,1,30,37,37,22,700,703,701,701,701","adx_ad_count":18,"bidder_method":1,"bidder_version":1,"city":"São Paulo","country":"BR","days_since_last_visit":-1,"display_ad_count":11,"domain_id":391487,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","is_from_recommended_pages":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"max_ads":18,"metro_code":0,"optimization_version":1,"page_ad_positions":"1006,1022,1030,1037,1037,1100,1116,1140,1141,1141,1141,1148,1168,1169,1170,1700,1701,1701,1701,1703","page_view_count":0,"page_view_id":"c6d8be11-1249-42ea-4c67-9f836ad3355d","position_selection_id":46,"postal_code":"01000","pv_event_count":0,"response_size_orig":127776,"response_time_orig":605,"serverid":"i-0142a88987e337b85","state":"SP","sub_page_ad_positions":"1006,1100,1116,1140,1141,1141,1141,1148,1168,1169,1170,1340,1360,1560,1560,1700,1701,1701,1701,1703","t_epoch":1679403788,"template_id":134,"time_on_site_visit":0,"url":"https://acordesweb.com/artista/beyonce","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":2510,"worst_bad_word_level":0};var _ezim_d = {"acordesweb_com-banner-1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-banner-1/2023-03-21/7795289466686384","height":"90","position_id":1030,"sub_position_id":1360,"width":"970"},"acordesweb_com-box-2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-box-2/2023-03-21/5838194356677578","height":"90","position_id":1168,"sub_position_id":1168,"width":"728"},"acordesweb_com-box-3":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-box-3/2023-03-21/7154506198690137","position_id":1141,"sub_position_id":1141},"acordesweb_com-box-3_1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-box-3/2023-03-21/7154506198690137","position_id":1141,"sub_position_id":1141},"acordesweb_com-box-3_2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-box-3/2023-03-21/7154506198690137","position_id":1141,"sub_position_id":1141},"acordesweb_com-box-4":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-box-4/2023-03-21/4728296838714577","height":"250","position_id":1148,"sub_position_id":1148,"width":"970"},"acordesweb_com-edge-1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-edge-1/2023-03-21/2456176188711010","height":"600","position_id":1169,"sub_position_id":1169,"width":"160"},"acordesweb_com-edge-2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-edge-2/2023-03-21/4474452324705568","height":"600","position_id":1170,"sub_position_id":1170,"width":"160"},"acordesweb_com-large-leaderboard-2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-large-leaderboard-2/2023-03-21/5924107890680211","height":"250","position_id":1140,"sub_position_id":1140,"width":"250"},"acordesweb_com-large-mobile-banner-1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-large-mobile-banner-1/2023-03-21/6756833628672012","height":"250","position_id":1116,"sub_position_id":1116,"width":"250"},"acordesweb_com-large-mobile-banner-2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-large-mobile-banner-2/2023-03-21/7647459526678868","height":"400","position_id":1700,"sub_position_id":1700,"width":"580"},"acordesweb_com-leader-1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-leader-1/2023-03-21/1701551434668219","position_id":1037,"sub_position_id":1560},"acordesweb_com-leader-1_1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-leader-1/2023-03-21/1701551434668219","position_id":1037,"sub_position_id":1560},"acordesweb_com-leader-2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-leader-2/2023-03-21/2313216376737334","height":"90","position_id":1703,"sub_position_id":1703,"width":"970"},"acordesweb_com-leader-3":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-leader-3/2023-03-21/4705874994718053","position_id":1701,"sub_position_id":1701},"acordesweb_com-leader-3_1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-leader-3/2023-03-21/4705874994718053","position_id":1701,"sub_position_id":1701},"acordesweb_com-leader-3_2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-leader-3/2023-03-21/4705874994718053","position_id":1701,"sub_position_id":1701},"acordesweb_com-medrectangle-2":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-medrectangle-2/2023-03-21/7806681506731828","height":"90","position_id":1100,"sub_position_id":1100,"width":"728"},"acordesweb_com-medrectangle-4":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-medrectangle-4/2023-03-21/7774733492745530","height":"250","position_id":1022,"sub_position_id":1340,"width":"300"},"acordesweb_com-pixel1":{"adsense_stat_source_id":5,"adx_ad_count":18,"adx_stat_source_id":35,"full_id":"acordesweb_com-pixel1/2023-03-21/2626019564734839","height":"3","position_id":1006,"sub_position_id":1006,"width":"3"}};var _ezat = {"domain_id":391487,"form_factor_id":1,"framework_id":1,"pageview_date":"2023-03-21","pageview_id":"c6d8be11-1249-42ea-4c67-9f836ad3355d","template_id":134,"url":"https://acordesweb.com/artista/beyonce","visit_uuid":"04a26ce5-e39a-42a4-53e0-eb966fbe10b0"};</script><script data-ezscrex="false" data-pagespeed-no-defer data-cfasync="false" type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=195-0&bv=198&v=73&PageSpeed=off', true, [], true, false, false, true);</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){var e;__ez.vep=(e=[],"/detroitchicago/grapefruit.gif",{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer></script>
+
+<meta http-equiv="Content-Language" content="es" />
+<meta name="LANGUAGE" content="es" />
+<title>▷ Acordes de BEYONCE para Guitarra, Piano y Ukelele.</title>
+<meta http-equiv="description" content="Acordes para tocar las canciones de Beyonce en la guitarra, el piano, el ukelele, etc. Partituras con todos los tonos de Beyonce." />
+<meta http-equiv="keywords" content="Beyonce, acordes de Beyonce, tonos Beyonce, tonos de guitarra Beyonce, tocar Beyonce, guitarra, piano, ukelele, uqelee, uquelele, bajo, como tocar Beyonce ,partituras Beyonce, letra y musica" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+<link rel="shortcut icon" href="https://acordesweb.com/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://acordesweb.com/artista/beyonce" />
+<meta property="og:title" content="Canciones para Tocar de Beyonce, acordes y tablaturas." />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Acordes para tocar las canciones de Beyonce en la guitarra, el piano, el ukelele, etc. Partituras con los todos los tonos de Beyonce." />
+<meta property="og:url" content="https://acordesweb.com/artista/beyonce" />
+
+<meta property="og:image" content="https://acordesweb.com/img/beyonce-89255431f04ab870d32f7ed653aa12d6.jpg" />
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<style>
+
+
+
+        body {
+
+       font-family: 'Poppins', sans-serif;
+		  letter-spacing:0.1em;
+		  font-size:20px;
+
+
+
+                            background-color: #000000;
+
+                color: #FFFFFF;
+
+
+
+                
+        }
+
+
+
+		body::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFFF33;
+  outline: 1px solid #333333;
+}
+
+
+        .menu {
+
+
+
+            font-size: 15px;
+
+
+
+        }
+
+        .tema {
+
+            
+        }
+
+        @media screen and (min-width: 1200px) {
+
+            .logo_tam {
+
+                font-size: 25px;
+
+            }
+
+
+
+
+
+			 .logo_img {
+
+                width: 120px;
+
+            }
+
+            .tituloPrincipal{
+                font-size:3em;
+
+            }
+
+
+
+
+
+        }
+
+
+
+        @media screen and (max-width: 1200px) and (min-width: 850px) {
+
+            .logo_tam {
+
+                font-size: 24px;
+
+            }
+
+
+
+			 .logo_img {
+
+                width: 110px;
+
+            }
+
+
+ .tituloPrincipal{
+                font-size:2.5em;
+
+            }
+
+
+
+
+        }
+
+
+
+
+
+        @media screen and (max-width: 849px) and (min-width: 750px) {
+
+
+
+            .logo_tam {
+
+                font-size: 19px;
+
+            }
+
+
+
+			 .logo_img {
+
+                width: 100px;
+
+            }
+
+
+    .tituloPrincipal{
+                font-size:2.5em;
+
+            }
+
+
+        }
+
+
+
+        @media screen and (max-width: 749px) and (min-width: 630px) {
+
+
+
+            .logo_tam {
+
+                font-size: 16px;
+
+            }
+
+
+
+			 .logo_img {
+
+                width: 100px;
+
+            }
+
+ .tituloPrincipal{
+                font-size:2em;
+
+            }
+
+
+
+        }
+
+
+
+        @media screen and (max-width: 629px) and (min-width: 450px) {
+
+
+
+
+
+
+
+            .logo_tam {
+
+                font-size: 13px;
+
+            }
+
+
+
+			 .logo_img {
+
+                width: 100px;
+
+            }
+
+
+ .tituloPrincipal{
+                font-size:1.5em;
+
+            }
+
+
+        }
+
+
+
+        @media screen and (max-width: 449px) and (min-width: 350px) {
+
+
+
+            .logo_tam {
+
+                font-size: 11px;
+
+            }
+
+
+
+			 .logo_img {
+
+                width: 70px;
+
+            }
+
+
+ .tituloPrincipal{
+                font-size:1em;
+
+            }
+
+
+        }
+
+
+
+
+
+    
+
+/*============== NAvegador=====================*/
+
+    *{
+        /*border-radius: 0!important;*/
+        font-family: 'Montserrat', sans-serif;
+    }
+
+body {  background-color: #111;}
+
+    nav{
+        background-color: #191919;
+
+    }
+    .card{
+        background-color: #262626;
+        border:0.5px solid #191919;
+        box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+
+    }
+
+    .menuBuscador{
+        background-color: #191919;
+
+
+
+
+    }
+
+    .list-group, .list-group-item{
+        background-color: #262626;
+
+    }
+
+     h1,h2,h3,h4,h5,h6,a,p,span{
+        color:#d1d1d1;
+        font-family: 'Montserrat', sans-serif;
+        color: #d1d1d1;
+    }
+
+
+ .itemFoto::before{
+        content:'';
+        width: 800px;
+     height: 100px;
+     transform: rotate(30deg);
+     position: absolute;
+     left: 0;
+     top: 0;
+    }
+.itemFoto::after{
+          content:'';
+        width: 800px;
+     height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+     transform: rotate(-30deg);
+
+    }
+
+
+     @media (max-width: 500px) {
+        .displayNoneMenu{
+            display:none!important;
+        }
+    }
+
+		body::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFFF33;
+  outline: 1px solid #333333;
+}
+
+    .list-group-item {
+        cursor: pointer;
+
+    }
+
+    .list-group-item-action:focus, .list-group-item-action:hover{
+        background-color: #333;
+        color:white;
+    }
+
+    a:hover {
+     text-decoration: none!important;
+      color:#d1d1d1;
+    }
+
+    .tituloPrincipal{
+        font-size:3em;
+
+    }
+
+
+.btn {
+    color: #fcc107 !important;
+    border: 1px solid #343a40;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+
+
+</style>
+<style id='ezoicCSS'>.ezoic-at-0{line-height:0px;float:none !important;margin-bottom:15px !important;margin-right:auto !important;margin-left:auto !important;max-width:100% !important;margin-top:15px !important;min-width:970px;padding:0;}
+.ezoic-ad.large-leaderboard-2140{display:block !important;text-align:center !important;min-height:250px;}
+.ezoic-ad.large-mobile-banner-1116{display:block !important;text-align:center !important;min-height:250px;}
+.ezoic-ad.edge-1169{margin-bottom:2px !important;min-width:160px;margin-right:0px !important;margin-left:0px !important;display:inline-block;min-height:600px;margin-top:2px !important;}
+.ezoic-ad.edge-2170{margin-top:2px !important;margin-right:0px !important;margin-left:0px !important;min-height:600px;margin-bottom:2px !important;display:inline-block;min-width:160px;}
+.ezoic-ad.leader-3701{display:flex !important;text-align:center !important;width:970px;min-height:0px !important;justify-content:space-between;background:0 0 !important;margin-top:15px !important !important;margin-bottom:15px !important !important;}
+.ezoic-ad.box-4148{text-align:center !important;min-width:300px;display:block !important;min-height:250px;}
+.ezoic-ad.banner-1360{justify-content:center;display:flex !important;text-align:center !important;min-height:250px;width:100%;flex-direction:column !important;align-items:center;}
+.ezoic-ad.medrectangle-4340{display:block !important;text-align:center !important;width:100%;min-height:250px;}
+.ezoic-ad.leader-1560{min-width:580px;margin-bottom:15px !important !important;justify-content:space-between;background:0 0 !important;display:flex !important;min-height:0px !important;margin-top:15px !important !important;text-align:center !important;width:580px;}
+.ezoic-ad.large-mobile-banner-2700{text-align:center !important;display:block !important;width:100%;min-height:250px;}
+.ezoic-ad.leader-2703{display:flex !important;text-align:center !important;align-items:center;width:100%;justify-content:center;flex-direction:column !important;min-height:250px;}
+.ezoic-ad.box-2168{display:block !important;text-align:center !important;min-width:728px;min-height:90px;margin-top:70px !important;}
+.ezoic-ad.box-3141{text-align:center !important;min-height:0px !important;width:970px;margin-bottom:15px !important !important;display:flex !important;margin-top:15px !important !important;justify-content:space-between;background:0 0 !important;}
+.ezoic-ad.medrectangle-2100{line-height:0px;padding:0;float:none !important;display:inline-block;min-width:728px;min-height:90px;max-width:100% !important;}
+.ezoic-ad{display:inline-block;border:0px;}.ezoic-ad>div>iframe{margin:0px!important;padding:0px!important;}
+.ezmob-footer{position:fixed;left:0;bottom:0;width:100%;background:#fff;z-index:100000;line-height:0}.ezmob-footer-desktop{background-color:#fffc;border-top:1px solid #d3d3d3;padding-top:5px}.ezmob-footer-close{cursor:pointer;color:#b2b2b2;border:1px solid #b2b2b2;border-radius:20px;background:#fff;line-height:20px;display:inline-block;font-size:20px;font-family:arial,sans-serif;padding:0 5px;position:absolute;top:5px;right:5px;height:24px;width:21px;text-align:center}body {
+					padding-bottom: 100px !important;
+					height: auto;
+				}
+				
+			.ezmob-footer-close {
+				left: 5px !important;
+				right: 0 !important
+			}
+
+.ez-rail-close {
+	color: #b2b2b2;
+	border: 1px solid #b2b2b2;
+	border-radius: 2px 2px 0px 0px;
+	background: #fff;
+	line-height: 17px;
+	display: inline-block;
+	font-size: 20px;
+	font-family: arial,sans-serif;
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.ez-sidebar-wall {
+	width: 160px;
+	height: 600px;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0);
+	top: calc(50vh - 300px);
+	margin: 0px 0px 0px 0px;
+	z-index: 0;
+}
+.ez-sidebar-wall-ad {
+	width: 160px;
+	height: 600px;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0);
+	top: calc(50vh - 300px);
+}</style><script type="text/javascript">var ezouid = "1";</script><base href="https://acordesweb.com/artista/beyonce"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+<script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 391487;
+var ezdomain = 'acordesweb.com';
+var ezoicSearchable = 1;
+</script>
+
+
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_391487=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["c6d8be11-1249-42ea-4c67-9f836ad3355d", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script type="text/javascript">var _audins_dom="acordesweb_com",_audins_did=391487;__ez.queue.addFile('/detroitchicago/cmbv2.js', '/detroitchicago/cmbv2.js?gcb=195-0&cb=04-3y02-8y06-13y07-2y0b-6y0d-23y17-4y1b-5y25-3y26-4y27-7y33-4y3c-11y5f-2y63-22&cmbcb=128&sj=x04x02x06x07x0bx0dx17x1bx25x26x27x33x3cx5fx63', true, [], true, false, true, false);</script>
+<script type="text/javascript" defer>__ez.queue.addFile('/detroitchicago/cmbdv2.js', '/detroitchicago/cmbdv2.js?gcb=195-0&cb=03-8y0c-6y1c-5y64-22&cmbcb=128&sj=x03x0cx1cx64', true, ['/detroitchicago/cmbv2.js'], true, false, true, false);</script></head>
+<body><script>var ezAardvarkDetected;function ezDetectAardvark(){if(typeof __ez!=='undefined'&&typeof __ez.bit!=='undefined'){let bait=document.createElement("div");bait.className="textads banner-ads banner_ads ad-unit ad-zone ad-space adsbox";bait.style.height="1px";document.body.appendChild(bait);let baitOffsetHeight=bait.offsetHeight;if(baitOffsetHeight){ezAardvarkDetected=false;__ez.bit.AddAndFire(window["_ezaq"]["page_view_id"],[(new __ezDotData('is_ad_blocked',false))]);}
+else{ezAardvarkDetected=true;__ez.bit.AddAndFire(window["_ezaq"]["page_view_id"],[(new __ezDotData('is_ad_blocked',true))]);}
+var observer=new MutationObserver(function(e){if(e[0].removedNodes){ezAardvarkDetected=true;__ez.bit.AddAndFire(window["_ezaq"]["page_view_id"],[(new __ezDotData('is_ad_blocked',true))]);}});observer.observe(bait,{childList:true,attributes:true});}}
+window.addEventListener('load',(e)=>{ezDetectAardvark();});</script>
+
+<div class="animate"><span id="ezoic-pub-ad-placeholder-168" class="ezoic-adpicker-ad"></span><span class="ezoic-ad ezoic-at-0 box-2 box-2168 adtester-container adtester-container-168" data-ez-name="acordesweb_com-box-2"><span id="div-gpt-ad-acordesweb_com-box-2-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:90px;min-width:728px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[728,90],'acordesweb_com-box-2','ezslot_9',168,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-box-2-0');</script></span></span>
+<div id="header-wrapper" class="sticky-top container-fluid" style="">
+<nav class="navbar navbar-light fixed-top">
+<a href="https://acordesweb.com">
+<img id="imagenLogo" src="https://acordesweb.com/logo-b.png" class="img-fluid" style="max-height:4vh;" alt="La web que aman los músicos" />
+</a>
+<ul class="nav ml-auto d-flex align-items-center" role="group" aria-label="Redes sociales">
+<li class="nav-item ">
+<button class="navbar-toggler nav-link btn border-0" type="button" data-toggle="collapse" data-target="#myNavbar" style="cursor:pointer;">
+<i class="fas fa-bars" style="font-size:1.3em;"></i>
+</button>
+</li>
+<li class="nav-item ">
+<a id="botonBuscador" class="nav-link btn border-0" style="cursor:pointer;">
+<i class="fas fa-search"></i>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link btn border-0" href="https://acordesweb.com/micuenta">
+<i class="fas fa-user" alt="Login" title="Login" aria-hidden="true" style="font-weight:200;"></i> Login </a>
+</li>
+<li class="nav-item displayNoneMenu">
+<a class="nav-link btn border-0" target="_blank" href="https://www.facebook.com/acordesweb">
+<i class="fab fa-facebook" aria-hidden="true" style="font-weight:200; "></i>
+</a>
+</li>
+<li class="nav-item displayNoneMenu">
+<a class="nav-link btn border-0" target="_blank" href="https://twitter.com/acordesweb">
+<i class="fab fa-twitter" style="font-weight:200; "></i>
+</a>
+</li>
+<li class="nav-item displayNoneMenu">
+<a class="nav-link btn border-0" target="_blank" href="https://www.instagram.com/acordesweb/">
+<i class="fab fa-instagram" style="font-weight:200; "></i>
+</a>
+</li>
+</ul>
+<div id="listaBuscador" class="menuBuscador container-fluid mt-3 p-0 d-none">
+<form method="post" action="https://acordesweb.com/buscar/" style="display: inline-flex; width: 100%;">
+<input class="form-control buscador" id="inputBusqueda" name="buscar" type="search" placeholder="Buscar" aria-label="Search" />
+<button class="btn" type="submit">Buscar</button>
+</form>
+</div>
+<script>
+                let isVisible = false;
+                let botonBuscador = document.querySelector('#botonBuscador');
+                let listaBuscador = document.querySelector('#listaBuscador');
+                let inputBusqueda = document.querySelector('#inputBusqueda');
+                botonBuscador.addEventListener('click', ()=>{
+                    if(isVisible) {
+                        listaBuscador.classList.add('d-none');
+                        listaBuscador.classList.remove('d-block');
+                        isVisible = false;
+                    } else {
+                        listaBuscador.classList.add('d-block');
+                        listaBuscador.classList.remove('d-none');
+                        inputBusqueda.focus();
+                        isVisible = true;
+                    }
+                });
+            </script>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav justify-content-center">
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/" ;="">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/micuenta/login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/micuenta/registrousuario.php"><i class="fas fa-user-circle"></i> Registro</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/cancioneros"><i class="fab fa-itunes-note"></i> Cancioneros / Playlists</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://blog.acordesweb.com"><i class="fab fa-itunes-note"></i> Acordes Blog</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/micuenta"><i class="fas fa-cloud-upload-alt"></i> Sube una canción</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/canciones_pedidas.php"><i class="fab fa-angellist"></i> Pide una canción</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/glosario-de-acordes"><i class="fab fa-itunes-note"></i> Glosario de acordes</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/afinador"><i class="fas fa-guitar"></i> Afinador ONLINE</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/sugerir_una_mejora.php"><i class="fas fa-plus"></i> Sugerir una mejora</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/juego_home.php"><i class="fas fa-deaf"></i> Afina tu oído (juego)</a>
+</li>
+<li class="nav-item col-sm-12 col-md-3 col-lg-12" style="/*border-bottom: 1px solid #222*/">
+<a class="nav-link py-3 px-0" href="https://acordesweb.com/politicas.php"><i class="fa fa-book" aria-hidden="true"></i> Política de uso</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="container" style="padding-top:50px;">
+
+<div class="card mb-3">
+<div class="card-body">
+<div class="grid">
+<div class="grid-item col-12 col-lg-6 mt-3 mb-3">
+<h1 style="color:#ffc107">Beyonce</h1>
+</div>
+<div class="grid-item col-12 col-lg-6">
+<img src="https://acordesweb.com/img/beyonce-89255431f04ab870d32f7ed653aa12d6.jpg" alt="Beyonce" title="Beyonce" class="img-fluid" />
+</div>
+<div class="grid-item col-12 col-lg-6">
+<hr />
+<p>
+<i class="fas fa-globe" style="color:#ffc107"></i> <a href="http://www.beyonce.com/" target="_blank">Web Oficial</a>
+</p>
+<p>
+<i class="fab fa-youtube" style="color:#ffc107"></i> <a href="//www.youtube.com/user/beyonce" target="_blank">Canal de Youtube</a>
+</p>
+<hr />
+<p>
+<i class="fab fa-wikipedia-w" style="color:#ffc107"></i> <a href="//en.wikipedia.org/wiki/Beyonc%C3%A9" target="_blank">Wikipedia</a>
+</p>
+<hr />
+<p>
+<i class="fab fa-spotify" style="color:#ffc107"></i> <a href="https://open.spotify.com/artist/6vWDO969PvNqNYHIOW5v0m" target="_blank">Spotify</a>
+</p>
+<hr />
+<hr />
+<a href="#bio"><span style="font-family: &#39;Montserrat&#39;, sans-serif; color: #d1d1d1;"><i class="fas fa-info" style="color:#ffc107"></i> Biografía</span></a>
+<hr />
+<a href="#relacionados"><span style="font-family: &#39;Montserrat&#39;, sans-serif; color: #d1d1d1;"><i class="fas fa-users" style="color:#ffc107"></i> Artistas Relacionados</span></a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="grid-item col-12 col-lg-12 mt-3 mb-3">
+
+</div><span id="ezoic-pub-ad-placeholder-141" class="ezoic-adpicker-ad"></span><span class="ezoic-ad ezoic-at-0 box-3 box-3141 adtester-container adtester-container-141 ezoic-ad-adaptive" data-ez-name="acordesweb_com-box-3"><span class="ezoic-ad box-3 box-3-multi-141 adtester-container adtester-container-141" data-ez-name="acordesweb_com-box-3"><span id="div-gpt-ad-acordesweb_com-box-3-0" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[300,250],'acordesweb_com-box-3','ezslot_4',141,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-box-3-0');</script></span></span><span class="ezoic-ad box-3 box-3-multi-141 adtester-container adtester-container-141" data-ez-name="acordesweb_com-box-3"><span id="div-gpt-ad-acordesweb_com-box-3-0_1" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[300,250],'acordesweb_com-box-3','ezslot_5',141,'0','1'])};__ez_fad_position('div-gpt-ad-acordesweb_com-box-3-0_1');</script></span></span><span class="ezoic-ad box-3 box-3-multi-141 adtester-container adtester-container-141" data-ez-name="acordesweb_com-box-3"><span id="div-gpt-ad-acordesweb_com-box-3-0_2" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[300,250],'acordesweb_com-box-3','ezslot_6',141,'0','2'])};__ez_fad_position('div-gpt-ad-acordesweb_com-box-3-0_2');</script></span></span><style> .box-3-multi-141{border:none !important;display:block !important;float:none !important;line-height:0px;margin-bottom:15px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;max-width:100% !important;min-height:250px;min-width:300px;padding:0;text-align:center !important;}</style></span>
+<div class="card mb-3">
+<div class="col-12 card-body">
+<div class="card-title">
+<h3> <i class="fas fa-music" style="color:#ffc107"></i> Canciones A/Z</h3>
+<a rel="”nofollow”" href="https://acordesweb.com/banda.php?banda=beyonce&amp;order=mas_tocadas"><p style="font-size:12px; padding-left:15px; color:#ffc107"><i class="fas fa-sort" style="color:#ffc107"></i>ORDERNAR POR MAS TOCADAS</p></a>
+</div>
+<ul class="list-group">
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/1-1">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- 1 1 <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/6-inch-feat-the-weeknd">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- 6 Inch (feat. The Weeknd) <span style="font-size:13px"><br /></span></font>
+</li></a>
+
+
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/711">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- 7/11 <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/all-night">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- All Night <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/america-the-beautiful">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- America The Beautiful <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/amor-gitano">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Amor Gitano <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/apest-feat-offset-amp-quavo">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- APES**T (feat. Offset Quavo) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/apest-feat-offset-quavo">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- APES**T (feat. Offset &amp; Quavo) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/at-last">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- At Last <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/ave-maria">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Ave Maria <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/baby-boy">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Baby Boy <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/be-with-you">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Be With You <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/beautiful-liar">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Beautiful Liar <span style="font-size:13px"><br /></span></font>
+ </li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/best-thing-i-never-had">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Best Thing I Never Had <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/bigger">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Bigger <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/blue">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Blue <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/broken-hearted-girl">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Broken Hearted Girl <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/can-you-feel-the-love-tonight-feat-childish-gambino">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Can You Feel The Love Tonight (feat. Childish Gambino) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/can-you-feel-the-love-tonight-from-the-lion-king-bds">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Can you feel the love tonight (From &#34;The Lion King&#34; BDS) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/check-on-it">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Check On It <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/crazy-in-love">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Crazy in Love <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/crazy-in-love-50-shades-of-grey">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Crazy In Love (50 Shades Of Grey) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/daddy-lessons">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Daddy Lessons <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/dangerously-in-love">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Dangerously in love <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/disappear">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Disappear <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/dont-hurt-yourself-feat-jack-white">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Don&#39;t Hurt Yourself (feat. Jack White) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/don-hurt-yourself-feat-jack-white">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Dont Hurt Yourself (feat. Jack White) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/dreaming">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Dreaming <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/drunk-in-love-feat-jay-z">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+
+ <font color="white">- Drunk In Love (feat. Jay Z) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/ego">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Ego <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/emotion">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Emotion <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/flawless-feat-chimamanda-ngozi-adichie">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Flawless (feat. Chimamanda Ngozi Adichie) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/flaws-and-all">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Flaws And All <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/formation">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Formation <span style="font-size:13px"><br /></span></font>
+</li></a>
+
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/forward-feat-james-blake">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Forward (feat. James Blake) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/freedom-feat-kendrick-lamar">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Freedom (feat. Kendrick Lamar) <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/ghost">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Ghost <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/green-light">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Green Light <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/halo">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Halo <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/haunted">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Haunted <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/heaven">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Heaven <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/hello">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Hello <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/helo">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Helo <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/hold-up">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Hold Up <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/i-care">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- I Care <span style="font-size:13px"><br /></span></font>
+
+</li></a>
+
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/i-miss-you">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- I Miss You <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/i-was-here">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- I Was Here <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/if-i-were-a-boy">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- If I Were a Boy <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/irremplazable">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Irremplazable <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/irreplaceable">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Irreplaceable <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/jealous">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Jealous <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/listen">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Listen <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/love-drought">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Love Drought <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/love-on-top">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Love On Top <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/naughty-girl">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Naughty Girl <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/oye">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Oye <span style="font-size:13px"><br /></span></font>
+ </li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/partition">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Partition <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/pray-you-catch-me">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Pray You Catch Me <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/pretty-hurts">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Pretty Hurts <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/radio">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Radio <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/rather-die-young">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Rather Die Young <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/resentment">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Resentment <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/ring-off">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Ring Off <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/rocket">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Rocket <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/sandcastles">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Sandcastles <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/satellites">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Satellites <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/scared-of-lonely">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+
+<font color="white">- Scared Of Lonely <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/shining">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Shining <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/si-yo-fuera-un-chico">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Si Yo Fuera Un Chico <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/smash-into-you">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Smash Into You <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/sorry">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Sorry <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/spirit">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Spirit <span style="font-size:13px"><br /></span></font>
+</li></a>
+  <a class="botonJs" href="https://acordesweb.com/cancion/beyonce/sweet-dreams">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Sweet Dreams <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/thats-why-youre-beautiful">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- That&#39;s Why You&#39;re Beautiful <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/work-it-out">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Work It Out <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/xo">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- XO <span style="font-size:13px"><br /></span></font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/cancion/beyonce/yes">
+<li class="list-group-item list-group-item-action" style="border-bottom: solid;
+  border-bottom-color: currentcolor;
+  border-bottom-width: medium;
+border-bottom-width: 1px;
+border-bottom-color: white;">
+<font color="white">- Yes <span style="font-size:13px"><br /></span></font>
+</li></a>
+</ul>
+</div>
+</div><span id="ezoic-pub-ad-placeholder-132" class="ezoic-adpicker-ad"></span>
+<div class="card mb-3">
+
+<div class="col-12 card-body" id="bio">
+<h3 class="card-title"><i style="color: #ffc107" class="fas fa-info" style="color:#ffc107"></i> Bio</h3>
+<div class="col-12">
+<p>Beyoncé (4 de septiembre de 1981) es el nombre artístico de Beyoncé Giselle Knowles; Cantante de POP y R&amp;B, compositora, productora discográfica y actriz estadounidense.</p><span class="ezoic-autoinsert-ad ezoic-long_content"></span><span style="clear:both; display:block" id="ez-clearholder-banner-1"></span><span class="ezoic-ad ezoic-at-0 banner-1 banner-1360 adtester-container adtester-container-360" data-ez-name="acordesweb_com-banner-1"><span id="div-gpt-ad-acordesweb_com-banner-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:250px;min-width:970px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[970,90],'acordesweb_com-banner-1','ezslot_10',360,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-banner-1-0');</script></span></span><p>Nacida y criada en Houston, Texas, se inscribió en varias escuelas de artes escénicas, y se expuso por primera vez a los concurso de canto y baile cuando era una niña. Knowles saltó a la fama a finales de los 90 como la cantante principal del grupo Destiny&#39;s Child, el cual ha vendido más de 50 millones de discos en todo el mundo. Durante el hiato de Destiny&#39;s Child, Knowles lanzó su álbum debut como solista, Dangerously in Love, en junio de 2003. Dangerously in Love, que contiene éxitos como &#34;Baby Boy&#34;,&#34;naughty girl&#34;, me myself and I&#34;, &#34;dangerously in love 2&#34; y la super explosiva &#34;Crazy in Love&#34; se convirtió en uno de los albums con mas éxito de ese año. Knowles ganó cinco Premios Grammy en una sola noche en 2004, y su recepción señaló su viabilidad como artista solista. La disolución de Destiny&#39;s Child en 2005 facilitó la continuación de su éxito: lanzó su segundo álbum en solitario, B&#39;Day, en 2006, que contenía el éxito mundial &#34;Irreplaceable&#34;. Su tercer álbum en solitario, I Am… Sasha Fierce, fue lanzado en noviembre de 2008, y generó el éxito mundial &#34;If I Were A Boy&#34;, y el número uno de los Estados Unidos “Single Ladies (Put a ring on it)”, manteniéndose 4 semanas #1.</p><p>El éxito de sus discos como solista la ha establecido como una de las artistas más comerciales en la industria de la música, y ha expandido su carrera para actuar y endosar productos. Comenzó su carrera en 2001, apareciendo en el musical de la película Carmen: A Hip Hopera. En 2006, protagonizó el papel principal en la adaptación de la película del musical de Broadway de 1981 Dreamgirls, por la que obtuvo dos nominaciones Golden Globe. Knowles lanzó su línea de moda de la familia, la Casa de Deréon, en 2004, y se ha comprometido a respaldar marcas como Pepsi, Tommy Hilfiger, Emporio Armani y L&#39;Oréal.</p><p>Beyoncé Knowles es la hija mayor de Tina y Mathew Knowles Beyoncé. Sus abuelos paternos, Lumis y Beyoncé Agnes Dereon, eran de Louisiana, lo que explica que hable también francés. Sus padres decidieron que su nombre sería un homenaje al nombre de soltera de su madre. Su hermana, Solange Knowles, es también actriz y cantante.</p><span class="ezoic-autoinsert-ad ezoic-under_second_paragraph"></span><span style="clear:both; display:block" id="ez-clearholder-medrectangle-4"></span><span class="ezoic-ad ezoic-at-0 medrectangle-4 medrectangle-4340 adtester-container adtester-container-340" data-ez-name="acordesweb_com-medrectangle-4"><span id="div-gpt-ad-acordesweb_com-medrectangle-4-0" ezaw="300" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:970px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[300,250],'acordesweb_com-medrectangle-4','ezslot_13',340,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-medrectangle-4-0');</script></span></span><p>Se crió en el cinturón de la American Bible, que se extiende alrededor de Houston (Texas), donde la cantante inició su carrera en el coro de la Iglesia Metodista Unida de San Juan y fue bautizada.</p><span class="ezoic-autoinsert-ad ezoic-longer_content"></span><p>Su pastor Rudy Rasmus sigue siendo su asesor espiritual. Donaciones de Beyoncé para la congregación permitieron la construcción de un gran centro para la rehabilitación de jóvenes.</p><span class="ezoic-autoinsert-ad ezoic-incontent_6"></span><span style="clear:both; display:block" id="ez-clearholder-leader-3"></span><span class="ezoic-ad ezoic-at-0 leader-3 leader-3701 adtester-container adtester-container-701 ezoic-ad-adaptive" data-ez-name="acordesweb_com-leader-3"><span class="ezoic-ad leader-3 leader-3-multi-701 adtester-container adtester-container-701" data-ez-name="acordesweb_com-leader-3"><span id="div-gpt-ad-acordesweb_com-leader-3-0" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[300,250],'acordesweb_com-leader-3','ezslot_16',701,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-leader-3-0');</script></span></span><span class="ezoic-ad leader-3 leader-3-multi-701 adtester-container adtester-container-701" data-ez-name="acordesweb_com-leader-3"><span id="div-gpt-ad-acordesweb_com-leader-3-0_1" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[300,250],'acordesweb_com-leader-3','ezslot_17',701,'0','1'])};__ez_fad_position('div-gpt-ad-acordesweb_com-leader-3-0_1');</script></span></span><span class="ezoic-ad leader-3 leader-3-multi-701 adtester-container adtester-container-701" data-ez-name="acordesweb_com-leader-3"><span id="div-gpt-ad-acordesweb_com-leader-3-0_2" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[300,250],'acordesweb_com-leader-3','ezslot_18',701,'0','2'])};__ez_fad_position('div-gpt-ad-acordesweb_com-leader-3-0_2');</script></span></span><style> .leader-3-multi-701{border:none !important;display:block !important;float:none !important;line-height:0px;margin-bottom:15px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;max-width:100% !important;min-height:250px;min-width:300px;padding:0;text-align:center !important;width:100%;}</style></span><p>Durante siete años ganó un premio al mérito por la escuela versión de la canción Imagine de John Lennon. Conoció y se hizo amiga de Kelly Rowland, cuya madre trabajó para la familia Knowles; entonces vivían en la misma casa. Viendo que la intención de las dos niñas, para dedicarse a la música era seria, Mathew Knowles, padre de Beyoncé, comenzó a buscar un sello musical. Él vio cómo su trabajo muy bien pagado era rebajado por su empresa, lo que afectó a toda la familia. El alquiler se redujo a la mitad de ellos, y tuvieron que trasladarse a dos apartamentos. Cuando el trío firmó con Columbia en 1996, dio a la familia una segunda oportunidad para mejorar la situación.</p><span class="ezoic-autoinsert-ad ezoic-longest_content"></span><span style="clear:both; display:block" id="ez-clearholder-leader-1"></span><span class="ezoic-ad ezoic-at-0 leader-1 leader-1560 adtester-container adtester-container-560 ezoic-ad-adaptive" data-ez-name="acordesweb_com-leader-1"><span class="ezoic-ad leader-1 leader-1-multi-560 adtester-container adtester-container-560" data-ez-name="acordesweb_com-leader-1"><span id="div-gpt-ad-acordesweb_com-leader-1-0" ezaw="290" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:290px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[250,250],'acordesweb_com-leader-1','ezslot_11',560,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-leader-1-0');</script></span></span><span class="ezoic-ad leader-1 leader-1-multi-560 adtester-container adtester-container-560" data-ez-name="acordesweb_com-leader-1"><span id="div-gpt-ad-acordesweb_com-leader-1-0_1" ezaw="290" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:290px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[250,250],'acordesweb_com-leader-1','ezslot_12',560,'0','1'])};__ez_fad_position('div-gpt-ad-acordesweb_com-leader-1-0_1');</script></span></span><style> .leader-1-multi-560{border:none !important;display:block !important;float:none !important;line-height:0px;margin-bottom:15px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;max-width:100% !important;min-height:250px;min-width:250px;padding:0;text-align:center !important;width:100%;}</style></span><p>Como adolescente, Beyoncé estudio en la Escuela Secundaria para la Realización y Artes Visuales, en Houston, donde mostró su talento musical. Más tarde, ella se dirigió a la Alief Elsik Alto School, también en Houston.</p><span class="ezoic-autoinsert-ad ezoic-incontent_5"></span><span style="clear:both; display:block" id="ez-clearholder-large-mobile-banner-2"></span><span class="ezoic-ad ezoic-at-0 large-mobile-banner-2 large-mobile-banner-2700 adtester-container adtester-container-700" data-ez-name="acordesweb_com-large-mobile-banner-2"><span id="div-gpt-ad-acordesweb_com-large-mobile-banner-2-0" ezaw="580" ezah="400" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:250px;min-width:970px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[580,400],'acordesweb_com-large-mobile-banner-2','ezslot_14',700,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-large-mobile-banner-2-0');</script></span></span><p>Beyoncé formaba el grupo Destiny&#39;s Child con LeToya Luckett, LaTavia Roberson y Kelly Rowland. Tras problemas con el representante, LeToya y LaTavia se fueron del grupo y llegaron como suplentes Michelle Williams y Farrah Flankin; esta última abandonó al poco tiempo alegando que era demasiada presión para ella. Formaron el trío finalmente Beyoncé, Kelly y Michelle.</p><span class="ezoic-autoinsert-ad ezoic-long_content"></span><p>Muchos de los éxitos de Destiny&#39;s Child, con más de 60 millones de discos vendidos en todo el mundo, fueron co-escritos y coproducidos por la propia Beyoncé. En 2004 el grupo se volvió a unir para realizar el disco Destiny Fulfilled, con el que alcanzaron los primeros puestos en las listas de éxitos con los sencillos Lose My Breath y Soldier. En 2005, para finalizar la carrera del grupo, sacaron 1#&#39;s, una recopilación de todos sus éxitos con tres nuevas canciones: Stand Up For love , Check On It (Beyoncé Feat. Slim Thug) y Feel The Same Way I Do.</p><span class="ezoic-autoinsert-ad ezoic-incontent_6"></span><p>En 2001, se convirtió en la primera mujer negra y la segunda mujer en recibir el premio El compositor del año de la Sociedad Americana de Compositores, Autores y Editores. Beyoncé también se ha incluido numerosas veces en la lista de las 50 mujeres más sexys del mundo.</p><span class="ezoic-autoinsert-ad ezoic-longer_content"></span><p>Durante el otoño de 2002, Knowles hizo una participación especial (featuring) en el éxito Bonnie &amp; Clyde 03, el rapero Jay-Z. En la primavera de 2003, grabó a dúo con Luther Vandross The Closer I Get To You, originalmente hecho famoso por Roberta Flack y Donny Hathaway. En esta nueva versión, las partes vocales fueron modificadas con Vandross para que él cantase las partes de Flack. La canción fue incluida en el primer disco en solitario de Beyoncé y en uno de Luther Vandros, Dance With My Father. Ambos ganaron el Grammy a la Mejor Interpretación de R &amp; B por un Grupo o Dúo en este mismo año.</p><span class="ezoic-autoinsert-ad ezoic-incontent_7"></span><p>En 2003, Knowles lanzó su primer álbum en solitario, Dangerously in Love. El álbum se estrenó en el Billboard 200 en la primera semana llegando directamente al 1º lugar, con una venta de 317.000 copias en la primera semana.</p><span class="ezoic-autoinsert-ad ezoic-incontent_8"></span><span style="clear:both; display:block" id="ez-clearholder-leader-2"></span><span class="ezoic-ad ezoic-at-0 leader-2 leader-2703 adtester-container adtester-container-703" data-ez-name="acordesweb_com-leader-2"><span id="div-gpt-ad-acordesweb_com-leader-2-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:250px;min-width:970px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[970,90],'acordesweb_com-leader-2','ezslot_15',703,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-leader-2-0');</script></span></span><p>Fue certificado de platino un mes más tarde, el 26 de julio de 2003. El primer single, Crazy In Love (posiblemente su canción más conocida), con la participación especial del rapero Jay-Z, se convirtió rápidamente en uno de los más grandes éxitos de ese verano (y de todo el año), permaneciendo en la cima de la lista Billboard Hot 100, 8 semanas consecutivas. Dangerously in Love llegó también al nº 1 de las listas del Reino Unido y Canadá. El álbum vendió más de 4 millones de copias en los Estados Unidos y 11 millones de copias en todo el mundo. Cuando su primer single y su álbum se reunieron el primero de los EE.UU. y el Reino Unido, se convirtió en la primera artista que alcanzaba este hecho desde los Beatles, Simon y Garfunkel, y Rod Stewart en los años 60 y 70. Beyoncé fue, por lo tanto, uno de los artistas con más discos vendidos de 2003.</p><p>A finales de verano, Baby Boy, el segundo single de Dangerously in Love, tuvo la participación especial de Sean Paul, empezó a aumentar en las listas y se convirtió en uno de los más grandes éxitos de 2003, que dominó las frecuencias de radio en el otoño de 2003: 9 semanas en el primer lugar - una semana más que Crazy In Love.</p><p>Viniendo para el éxito de Baby Boy, lanzó su tercer single “Me, Myself &amp; I&#34;, a finales de 2003, el cuarto single, Dangerously in Love, Naughty Girl, se puso en marcha en el medio de 2004. Estos dos últimos alcanzaron el cuarto y tercer lugar en el Billboard Hot 100, respectivamente.</p><span class="ezoic-autoinsert-ad ezoic-longest_content"></span><p>En la ceremonia de los Premios Grammy en el 2004, Beyoncé ganó 5 Grammys por su trabajo en solitario. Estos premios incluyen Mejor Performance Vocal Femenino, R &amp; B por Dangerously In Love 2, y Mejor Álbum de R &amp; B de Contemporáneo.</p><p>En diciembre de 2005, Beyoncé grabó Check on it, con la participación de Slim Thug y de Bun B.en el remix oficial. La música fue incluida en el primer álbum de Destiny&#39;s Child y la banda sonora de la película El Color De La Pantera Rosa.</p><p>En los Premios Grammy de 2006, Beyoncé ganó un Grammy en la categoría Mejor actuación de duo o grupo de R&amp;B por la canción “So Amazing” un dueto con Stevie Wonder para el álbum So Amazing: Un All-Star Tribute to Luther Vandross.</p><p>El 4 de Septiembre de 2006 se dio a conocer el segundo álbum de la cantante, B&#39;Day. Este nuevo álbum incluyó canciones nuevas co-escritas y producidas por Knowles. Déjà Vu fue el primer single del álbum, con la participación especial del rapero Jay-Z, co-producido por Rodney Jerkins. Otros co-productores de B&#39;Day son: Rich Harrison, The Neptunes y Swizz Beatz. Knowles afirmó que termino el trabajo de producción del álbum en apenas dos semanas.</p><p> <br />Déjà Vu, fue Top 5 en los EE.UU. y en el # 1 de R &amp; B en el gráfico de los EE.UU.. También alcanzó el # 1 en el Reino Unido.</p><p>El segundo single, Ring the Alarm&#34;, fue lanzado en Internet el 8 de agosto de 2006 y el video el 16 de agosto. El tema trata sobre la obsesión de ella por no dejar escapar a su pareja, con la que está por dinero, por lo que no le interesa que éste se largue con otra porque se terminarían los lujos.</p><p>Poco después, la diva lanzó Irreplaceable, el cual ha sido el mayor éxito de su carrera, que fue de 10 semanas en primer lugar en los Estados Unidos. En este tema (que escribió rápidamente después de un día de rodaje de la película Dreamgirls inspirándose en la situación que vivía su personaje, Deena Jones, con su marido) Beyoncé le deja claro a su pareja que se puede ir, que no le necesita y que no piensa seguir aguantando a alguien como él.</p><p>En 2007, Beyoncé B&#39;Day lanzó la Deluxe Edition, una versión especial de B&#39;Day de disco doble en la que contenia nuevos temas cantados en castellano por la propia Beyoncé (entre ellos su gran éxito “Irreplaceable”, con el titulo de “Irremplazable”. En ella lanzó Beautiful Liar, una canción que no estaba en la primera edición del álbumy que forma un duo con la cantante Shakira. Llego a convertirse en uno de los grandes éxitos de el 2007 (saltó del 93 al 3 en el Hot 100 de USA, y llegó a ser número 1 mundial) y fue ganadora de dos premios VMA.</p><p>Get Me Bodied y Green Light fueron los 5º y últimos singles de B&#39;Day (en EE.UU y Europa respectivamente). De Get Me Bodied se hicieron tres versiones. Las dos primeras se encuentran en se encuentran en B&#39;Day y B&#39;Day Deluxe Ediditon. Y la última versión es un remix de Timbaland con el rapero latino Voltio. Get Me Bodied aunque no ha sido el gran éxito de la diva entró en Billboard Hot 100 ocupando posiciones bastante elevadas mucho antes de ser nombrado single. B&#39;Day ha vendido más de 6 millones de copias alrededor de todo el mundo. El álbum ha permanecido en las listas dos alrededor de dos años, convirtiéndose en uno de los discos más vendidos de 2006 y 2007.</p><span class="ezoic-autoinsert-ad ezoic-incontent_5"></span><p>I Am… Sasha Fierce es el tercer álbum de la cantante norte-americana. El álbum se estrenó mundialmente el 18 de Noviembre, aunque en Japón vio la luz una semana antes. El disco vendió más de 42.000 copias en su primera semana en Japón, entró en el #1 en Estados Unidos con 482.428 y se colocó en el #1 mundial con un total de 591.000. El disco contaría con singles dobles, es decir, el primer single, no sería una canción, sino dos. Así Beyoncé sacó como primeros sencillos “If I Were A Boy” y “Single Ladies (Put A Ring On It)”. If I Were A Boy se convirtió rápidamente en un éxito en US y Europa. Al cabo del tiempo Single Ladies (Put A Ring On It) se escaló posiciones en las listas Estadounidenses llegando al #1, durante 4 semanas consecutivas, convirtiendo en su nueva seña de identidad.</p><p>Posteriormente sacaría los segundos singles, Diva y Halo, esta ultima siendo el éxito del álbum, comparable a “Irreplaceable” en B&#39;Day, recibiendo excelentes criticas y escalando posiciones bastante elevadas en las listas.</p><p>Por ultimo los singles mas actuales han sido “Ego” y “Sweet Dreams” esta ultima comenzando a escalar posiciones en Europa.</p><p>Se espera que para Octubre se lanze una re-edición del disco con el titulo “I am… Sasha Fierce: Platinum Edition” la cual contendrá nuevas canciones y un DVD con videos musicales de numerosas canciones.</p>
+</div>
+</div>
+</div><span id="ezoic-pub-ad-placeholder-142" class="ezoic-adpicker-ad"></span>
+<div class="card mb-3">
+<div class="col-12 card-body mt-3 mb-3" id="relacionados" alt="related">
+<div class="car-title">
+<h3><i class="fas fa-users"></i> Artistas Relacionados</h3>
+</div>
+<ul class="list-group">
+<a class="botonJs" href="https://acordesweb.com/artista/rihanna"><li class="list-group-item list-group-item-action">
+<font color="white">Rihanna</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/kelly-rowland"><li class="list-group-item list-group-item-action">
+<font color="white">Kelly Rowland</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/mariah-carey"><li class="list-group-item list-group-item-action">
+<font color="white">Mariah Carey</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/solange"><li class="list-group-item list-group-item-action">
+<font color="white">Solange</font>
+
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/ariana-grande"><li class="list-group-item list-group-item-action">
+<font color="white">Ariana Grande</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/nicki-minaj"><li class="list-group-item list-group-item-action">
+<font color="white">Nicki Minaj</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/whitney-houston"><li class="list-group-item list-group-item-action">
+<font color="white">Whitney Houston</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/ciara"><li class="list-group-item list-group-item-action">
+<font color="white">Ciara</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/jennifer-hudson"><li class="list-group-item list-group-item-action">
+<font color="white">Jennifer Hudson</font>
+ </li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/tinashe"><li class="list-group-item list-group-item-action">
+<font color="white">Tinashe</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/sza"><li class="list-group-item list-group-item-action">
+<font color="white">Sza</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/alicia-keys"><li class="list-group-item list-group-item-action">
+<font color="white">Alicia Keys</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/michelle-williams"><li class="list-group-item list-group-item-action">
+<font color="white">Michelle Williams</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/fergie"><li class="list-group-item list-group-item-action">
+<font color="white">Fergie</font>
+</li></a>
+
+<a class="botonJs" href="https://acordesweb.com/artista/janet-jackson"><li class="list-group-item list-group-item-action">
+<font color="white">Janet Jackson</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/toni-braxton"><li class="list-group-item list-group-item-action">
+<font color="white">Toni Braxton</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/brandy"><li class="list-group-item list-group-item-action">
+<font color="white">Brandy</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/christina-aguilera"><li class="list-group-item list-group-item-action">
+<font color="white">Christina Aguilera</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/the-pussycat-dolls"><li class="list-group-item list-group-item-action">
+<font color="white">The Pussycat Dolls</font>
+</li></a>
+
+<a class="botonJs" href="https://acordesweb.com/artista/jazmine-sullivan"><li class="list-group-item list-group-item-action">
+<font color="white">Jazmine Sullivan</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/jessie-j"><li class="list-group-item list-group-item-action">
+<font color="white">Jessie J</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/mary-j-blige"><li class="list-group-item list-group-item-action">
+<font color="white">Mary J Blige</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/usher"><li class="list-group-item list-group-item-action">
+<font color="white">Usher</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/jennifer-lopez"><li class="list-group-item list-group-item-action">
+<font color="white">Jennifer Lopez</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/adele"><li class="list-group-item list-group-item-action">
+<font color="white">Adele</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/monica"><li class="list-group-item list-group-item-action">
+<font color="white">Monica</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/keyshia-cole"><li class="list-group-item list-group-item-action">
+<font color="white">Keyshia Cole</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/ashanti"><li class="list-group-item list-group-item-action">
+<font color="white">Ashanti</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/little-mix"><li class="list-group-item list-group-item-action">
+<font color="white">Little Mix</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/justin-timberlake"><li class="list-group-item list-group-item-action">
+
+<font color="white">Justin Timberlake</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/nicole-scherzinger"><li class="list-group-item list-group-item-action">
+<font color="white">Nicole Scherzinger</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/tamar-braxton"><li class="list-group-item list-group-item-action">
+<font color="white">Tamar Braxton</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/lady-gaga"><li class="list-group-item list-group-item-action">
+<font color="white">Lady Gaga</font>
+</li></a>
+<a class="botonJs" href="https://acordesweb.com/artista/tamia"><li class="list-group-item list-group-item-action">
+<font color="white">Tamia</font>
+</li></a>
+</ul>
+</div>
+<span id="ezoic-pub-ad-placeholder-148" class="ezoic-adpicker-ad"></span><span class="ezoic-ad ezoic-at-0 box-4 box-4148 adtester-container adtester-container-148" data-ez-name="acordesweb_com-box-4"><span id="div-gpt-ad-acordesweb_com-box-4-0" ezaw="970" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:250px;min-width:300px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[970,250],'acordesweb_com-box-4','ezslot_3',148,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-box-4-0');</script></span></span></div>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125127207-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125127207-1');
+</script>
+
+<span id="ezoic-pub-ad-placeholder-140" class="ezoic-adpicker-ad"></span><span class="ezoic-ad ezoic-at-0 large-leaderboard-2 large-leaderboard-2140 adtester-container adtester-container-140" data-ez-name="acordesweb_com-large-leaderboard-2"><span id="div-gpt-ad-acordesweb_com-large-leaderboard-2-0" ezaw="250" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:250px;min-width:970px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[250,250],'acordesweb_com-large-leaderboard-2','ezslot_7',140,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-large-leaderboard-2-0');</script></span></span></div><span id="ezoic-pub-ad-placeholder-116" class="ezoic-adpicker-ad"></span><span class="ezoic-ad ezoic-at-0 large-mobile-banner-1 large-mobile-banner-1116 adtester-container adtester-container-116" data-ez-name="acordesweb_com-large-mobile-banner-1"><span id="div-gpt-ad-acordesweb_com-large-mobile-banner-1-0" ezaw="250" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:250px;min-width:970px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[250,250],'acordesweb_com-large-mobile-banner-1','ezslot_8',116,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-large-mobile-banner-1-0');</script></span></span>
+</div>
+
+
+
+<style>
+    .visible {
+      visibility: visible !important;
+      transition: all 2s ease-in;
+    }
+    .invisible {
+      visibility: hidden !important;
+    }
+    .cookies-link{
+        color:#fcc107;
+    }
+    </style>
+
+<div id="barraCookie" class="container-fluid fixed-top invisible" style="background:#111;border-top:4px solid #ffc107;">
+<div class="container">
+<div class="row p-2">
+<div class="col-6 col-sm-10 d-flex align-items-center">
+<p style="font-size:12px;margin:0;">Usamos cookies.
+<a aria-label="learn more about cookies" role="button" class="cookies-link" href="https://acordesweb.com/politica_de_cookies.php" rel="nofollow" target="_blank">Leer más</a>
+</p>
+</div>
+<div class="col-6 col-sm-2">
+<button type="button" class="btn btn-block" onclick="btnYiyo()">
+OK
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+                  function btnYiyo() {
+             let btnYi = document.querySelector('#barraCookie').classList;
+             console.log(btnYi);
+             btnYi.add('invisible');
+          }
+    </script>
+<footer class="container-fluid" style="margin-top:35px; padding-bottom: 50px;">
+<div class="col-12 text-center" style="padding-top:20px;">
+<p class="text">Más artistas</p>
+<div class="col-12 mb-1">
+<a class="btn mb-1" href="https://acordesweb.com/artistas/A/0/1">
+A
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/B/0/1">
+B
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/C/0/1">
+C
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/D/0/1">
+D
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/E/0/1">
+E
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/F/0/1">
+F
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/G/0/1">
+G
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/H/0/1">
+H
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/I/0/1">
+I
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/J/0/1">
+J
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/K/0/1">
+K
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/L/0/1">
+L
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/M/0/1">
+M
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/N/0/1">
+N
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/O/0/1">
+O
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/P/0/1">
+P
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/Q/0/1">
+Q
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/R/0/1">
+R
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/S/0/1">
+S
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/T/0/1">
+T
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/U/0/1">
+U
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/V/0/1">
+V
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/W/0/1">
+W
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/X/0/1">
+X
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/Y/0/1">
+Y
+</a>
+<a class="btn mb-1" href="https://acordesweb.com/artistas/Z/0/1">
+Z
+</a>
+</div>
+</div>
+<section class="col-12">
+<div class="col-12 text-center mb-1">
+<a class="btn mb-1" href="https://acordesweb.com/micuenta/login.php">
+Login
+</a>
+<a class="btn mb-1 ml-2" href="https://acordesweb.com/micuenta/registrousuario.php">
+Registro
+</a>
+<a class="btn mb-1 ml-2" href="https://acordesweb.com/afinador">
+Afinador
+</a>
+<a id="merch" class="btn mb-1 ml-2" href="https://acordesweb.com/glosario-de-acordes">
+Glosario
+</a>
+<a class="btn mb-1 ml-2" href="https://acordesweb.com/politicas.php">
+Políticas de uso
+</a>
+</div>
+<div class="col-12 mt-3 pt-3 text-center">
+<nav class="col-12 d-flex justify-content-center align-items-center mb-3" style="background: transparent;">
+<a target="_blank" class="btn " href="#">
+<i class="fab fa-facebook-square"></i>
+</a>
+<a target="_blank" class="btn ml-2" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a target="_blank" class="btn ml-2" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a target="_blank" class="btn ml-2" href="#">
+<i class="fab fa-youtube"></i>
+</a>
+</nav>
+<small class="text m-0">AcordesWeb.com</small>
+</div>
+</section>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script>
+/*
+
+$( document ).ready(function() {
+     $('.leftmenutrigger').on('click', function(e) {
+     $('.side-nav').toggleClass("open");
+     e.preventDefault();
+    });
+});
+*/
+</script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script type="text/javascript">
+window.setInterval(function(){
+  $('.grid').isotope({
+  itemSelector: '.grid-item'
+});
+}, 400);
+
+
+   /*
+
+    var menuBoxes = document.getElementsByClassName('botonJs');
+    var menuLargo = menuBoxes.length;
+
+    for (var i = 0; i < menuLargo; i++) {
+
+    menuBoxes[i].onmouseclick = (function(e) {
+        event.defaultPrevented();
+
+        this.innerHTML = 'colorString';
+        console.log(this);
+    })
+
+}
+
+    */
+
+</script>
+<script>
+/* BIT- Acordesweb - Flex */
+cf_page_artist = "";
+cf_page_song = "";
+cf_adunit_id = "100001871";
+cf_flex = true;
+</script>
+<script src="//srv.clickfuse.com/showads/showad.js"></script>
+
+<div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span id="ezoic-pub-ad-placeholder-100"></span><div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span class="ezoic-ad ezoic-at-4 medrectangle-2 medrectangle-2100 adtester-container adtester-container-100" data-ez-name="acordesweb_com-medrectangle-2"><span id="div-gpt-ad-acordesweb_com-medrectangle-2-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:90px;min-width:728px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[728,90],'acordesweb_com-medrectangle-2','ezslot_2',100,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-medrectangle-2-0');</script></span></span></center><span class="ezmob-footer-close" id="ezmob-footer-close" onclick="__ez_close_anchor()" style="display: none;">x</span></div></center></div><div id="ez-sidebar-wall-left" class="ez-sidebar-wall" style="left: 0px;">
+<div class="ez-sidebar-wall-ad">
+<span id="ezoic-pub-ad-placeholder-169"></span><span class="ezoic-ad ezoic-at-0 edge-1 edge-1169 adtester-container adtester-container-169" data-ez-name="acordesweb_com-edge-1"><span id="div-gpt-ad-acordesweb_com-edge-1-0" ezaw="160" ezah="600" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:600px;min-width:160px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[160,600],'acordesweb_com-edge-1','ezslot_1',169,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-edge-1-0');</script></span></span>
+<span class="ez-rail-close" id="ez-rail-close-left" style="top: 0; left: 0; display: none;" onclick="__ez_close_rail(this.parentElement.parentElement.id)">x</span>
+</div>
+</div><div id="ez-sidebar-wall-right" class="ez-sidebar-wall" style="right: 0px;">
+<div class="ez-sidebar-wall-ad">
+<span id="ezoic-pub-ad-placeholder-170"></span><span class="ezoic-ad ezoic-at-0 edge-2 edge-2170 adtester-container adtester-container-170" data-ez-name="acordesweb_com-edge-2"><span id="div-gpt-ad-acordesweb_com-edge-2-0" ezaw="160" ezah="600" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:600px;min-width:160px;" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none;">if(typeof ez_ad_units != 'undefined'){ez_ad_units.push([[160,600],'acordesweb_com-edge-2','ezslot_0',170,'0','0'])};__ez_fad_position('div-gpt-ad-acordesweb_com-edge-2-0');</script></span></span>
+<span class="ez-rail-close" id="ez-rail-close-right" style="top: 0; right: 0; display: none;" onclick="__ez_close_rail(this.parentElement.parentElement.id)">x</span>
+</div>
+</div><script async src="https://g.ezodn.com/cmp/v2/v.js?v=4"></script><script>(function(){var attachEvent=function(element,evt,func){if(element.addEventListener){element.addEventListener(evt,func,false);}else{element.attachEvent("on"+evt,func);}};attachEvent(document.body,"ezVigImpression",function(e){if(typeof(_ezaq)!=="undefined"&&typeof e==="object"){__ez.pel.AddAndFire(e.slot,[(new __ezDotData(e.key,e.value))]);}});})();</script><script>window.__ez_vig_close_wrapper=function(closeFunc,urlAddition){closeFunc();var vc={"enabled":false,"useVignetteLoader":true,"fireEventName":"ezVigImpression","impressionSource":"siderail","urlAddition":"utm_content=sr-left","disableFloor":true,"eventHandlerTest":false};if(typeof urlAddition=='string'){vc.urlAddition=urlAddition;}
+var v=newEzVignette(vc);v.handleClick();};</script>
+<script type="text/javascript">
+				var __inScopeForCCPA = false;
+		function __uspapi(command, version, callback) {
+			var response = null;
+			var successs = false;
+			if (command === "getUSPData" && version === 1) {
+				var uspString = "1"; // Version
+				if (__inScopeForCCPA) {
+					uspString += "Y"; // Has Explicit Notice for Opt Out been provided (ex footer or minor consent modal)
+					var result;
+					var consentCookie = (result = new RegExp('(?:^|; )ezoccpaconsent=([^;]*)').exec(document.cookie)) ? (result[1]) : null;
+					if (consentCookie === "nonconsent") {
+						uspString += "Y";
+					}
+					else {
+						uspString += "N";
+					}
+					uspString += "N" // Is pub a signatory to the IAB Limited Service Provider Agreement (http://www.iabprivacy.com/)
+				}
+				else {
+					uspString += "---";
+				}
+				response = {
+					uspString: uspString,
+					version: 1
+				};
+				success = true;
+			}
+			return callback(response, success);
+		};
+		function __receiveUspapiMessage(event) {
+			if (event.data.hasOwnProperty('__uspapiCall')) {
+				__uspapi('getUSPData', 1, function(uspData, success) {
+					event.source.postMessage({
+						__uspapiReturn: {
+							returnValue: uspData,
+							success: success,
+							callId: event.data.__uspapiCall.callId
+						}
+					},
+					event.origin);
+				});
+			}
+			return null;
+		};
+		window.addEventListener("message", __receiveUspapiMessage, false);
+</script>
+<script>function __ez_fad_ezpbinit(){var s = document.createElement( 'script' );
+	s.setAttribute( 'src', '//go.ezodn.com/hb/dall.js?cb=195-0-53' );
+	s.onerror = function () {window.ezDallErr = true};
+	document.body.appendChild( s );}__ez.queue.addFile('/detroitchicago/kenai.js', '/detroitchicago/kenai.js?gcb=0&cb=3', false, [], true, false, true, false);var ezMedianet={bidder:'medianet',params:{"cid":"8CUBCB617","crid":"188911743"}};var ezAMX={bidder:'amx',params:{tagId:'ZXpvaWMuY29t'}};var ezSmile={bidder:'smilewanted',params:{zoneId:'ezoic.com_hb_display'}};var ezjsps=function(obj){return JSON.parse(JSON.stringify(obj));};var epbjs=epbjs||{};epbjs.que=epbjs.que||[];epbjs.bidderTimeout=2000;epbjs.useAdj=true;epbjs.SS={"amx":11290,"appnexus":10087,"medianet":11307,"onemobile":11293,"smilewanted":11313};epbjs.bidders=['amx','appnexus','medianet','onemobile','smilewanted'];epbjs.que.push(function(){});epbjs.bidderSettings={};epbjs.gadj=1.000000;var __enableAnalytics=false;epbjs.testFeatures=['positional-keys'];
+var __s2sbidders=[];
+var __s2sinstreambidders=[];
+var __allBidders=['appnexus','onemobile','medianet','amx','smilewanted'];
+__ez.queue.addFile('/detroitchicago/houston.js', '/detroitchicago/houston.js?gcb=0&cb=70', true, [], true, false, true, false);__ez.queue.addFunc("epbjsRequestAdUnits", "epbjsRequestAdUnits", [[{code: 'div-gpt-ad-acordesweb_com-edge-2-0', mediaTypes: {banner: { sizes:[[160,600]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e221125d9d01b3' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-edge-1-0', mediaTypes: {banner: { sizes:[[160,600]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e221125d9d01b3' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-medrectangle-2-0', mediaTypes: {banner: { sizes:[[728,90]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9699b701747420431021125b3b0010' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-box-4-0', mediaTypes: {banner: { sizes:[[970,250],[970,90],[728,90]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e22111c285016c' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-box-3-0', mediaTypes: {banner: { sizes:[[300,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211258fd01b2' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 300,
+				sizes: [[300,250]]
+			}]},{code: 'div-gpt-ad-acordesweb_com-box-3-0_1', mediaTypes: {banner: { sizes:[[300,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211258fd01b2' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 300,
+				sizes: [[300,250]]
+			}]},{code: 'div-gpt-ad-acordesweb_com-box-3-0_2', mediaTypes: {banner: { sizes:[[300,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211258fd01b2' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 300,
+				sizes: [[300,250]]
+			}]},{code: 'div-gpt-ad-acordesweb_com-large-leaderboard-2-0', mediaTypes: {banner: { sizes:[[250,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e22111eba60182' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-large-mobile-banner-1-0', mediaTypes: {banner: { sizes:[[250,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-box-2-0', mediaTypes: {banner: { sizes:[[728,90]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9699b701747420431021125b3b0010' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-banner-1-0', mediaTypes: {banner: { sizes:[[970,90],[728,90]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e221119f180159' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-leader-1-0', mediaTypes: {banner: { sizes:[[250,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211200aa018d' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 250,
+				sizes: [[250,250]]
+			}]},{code: 'div-gpt-ad-acordesweb_com-leader-1-0_1', mediaTypes: {banner: { sizes:[[250,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211200aa018d' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 250,
+				sizes: [[250,250]]
+			}]},{code: 'div-gpt-ad-acordesweb_com-large-mobile-banner-2-0', mediaTypes: {banner: { sizes:[[580,400],[336,280],[300,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211258fd01b2' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-leader-2-0', mediaTypes: {banner: { sizes:[[970,90],[728,90]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9699b701747420431021125b3b0010' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] },{code: 'div-gpt-ad-acordesweb_com-leader-3-0', mediaTypes: {banner: { sizes:[[300,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211258fd01b2' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 300,
+				sizes: [[300,250]]
+			}]},{code: 'div-gpt-ad-acordesweb_com-leader-3-0_1', mediaTypes: {banner: { sizes:[[300,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211258fd01b2' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 300,
+				sizes: [[300,250]]
+			}]},{code: 'div-gpt-ad-acordesweb_com-leader-3-0_2', mediaTypes: {banner: { sizes:[[300,250]] }}, bids: [{bidder: 'appnexus', params: { placementId: '28486980', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'onemobile', params:{ dcn: '8a9691b20174742046e2210bface012a', pos: '8a9691b20174742046e2211258fd01b2' }},ezjsps(ezMedianet),ezjsps(ezAMX),ezjsps(ezSmile)] ,sizeMapping: [
+			{
+				minWidth: 300,
+				sizes: [[300,250]]
+			}]}]], false, ['/detroitchicago/houston.js'], true, true, true, true);var __id5pd = 'MTE9MjgwNCUzQTE0YyUzQTg4JTNBMjgzMCUzQTkxMDYlM0E2Y2NhJTNBZmQzZCUzQTdhMTUmMTI9TW96aWxsYSUyRjUuMCslMjhXaW5kb3dzK05UKzEwLjAlM0IrV2luNjQlM0IreDY0JTI5K0FwcGxlV2ViS2l0JTJGNTM3LjM2KyUyOEtIVE1MJTJDK2xpa2UrR2Vja28lMjkrQ2hyb21lJTJGMTExLjAuMC4wK1NhZmFyaSUyRjUzNy4zNg==';var __uIdHash = '3ec52a1c587639559fd001da405d3d7a624da5c63277a7d604c095efce1e6001';var __sspDomain = 'acordesweb.com';</script>
+<script>var __ez_tkn_evnt = function() { if(typeof(_ezaq) != 'undefined'){if(typeof window.ezogtk !== "undefined" && window.ezogtk !== "") {__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("ext_user_hash",window.ezogtk)]);}}};document.addEventListener("DOMContentLoaded", __ez.queue.addFunc("__ez_tkn_evnt", "__ez_tkn_evnt", event, false, ['/detroitchicago/minneapolis.js','/detroitchicago/memphis.js'], true, true, false, true));</script>
+<script async data-ezscrex="false">__ez.fads.cmd.push(function(){__ez.fads.__ez_fad_load(0,0);__ez.fads.__ez_fad_scrollmon();});</script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript' id=a6aa3ffb1f4e4ac9bf95518384b0e2f3>__cnxiid = 4603012092526474;
+	__cnxau = 'acordesweb_com-cnx-1';
+	setTimeout(function(){
+		!function(e) {
+			if (typeof(window.cnx) === 'undefined' || !window.cnx) {
+				window.cnx = {}, window.cnx.cmd = [];
+				var n = e.createElement('iframe');
+				n.src = 'javascript:false';
+				n.display = 'none', n.onload = function () {
+					if (typeof(ezVideo) === 'undefined' || !ezVideo) {
+						var e = n.contentWindow.document,
+							t = e.createElement('script');
+						t.src = 'https://cd.connatix.com/connatix.player.js?cid=5f049401-746e-4449-8c27-b6b9d8e25882';
+						t.setAttribute('async', '1');
+						t.setAttribute('type', 'text/javascript');
+						e.body.appendChild(t);
+					}
+				};
+				e.head.appendChild(n);
+			}
+		}(document);
+		(new Image).src = '//capi.connatix.com/tr/si?token=dceed97a-951e-4c47-b565-c2794ffae817&cid=5f049401-746e-4449-8c27-b6b9d8e25882';
+		cnx.cmd.push(function () {
+			if (typeof(__ezcnxPlayer) === 'undefined' || !__ezcnxPlayer) {
+				cnx({
+					playerId: 'dceed97a-951e-4c47-b565-c2794ffae817',
+				}).render('a6aa3ffb1f4e4ac9bf95518384b0e2f3', (e, n) => {
+					__ezcnxPlayer = n;
+					if (typeof(__ez_auto_adjust_outstream_float) === 'undefined') {
+						__ezcnxPlayerDelay = [];
+						__ezcnxPlayerDelay.push('outstreamFloatDestroy');
+					} else {
+						window.__ez_outstream_float_destroy && __ez_outstream_float_destroy();
+					}
+					if (typeof(__ez_outstream_player_tracking) === 'undefined') {
+						if (typeof(__ezcnxPlayerDelay) === 'undefined') {
+							__ezcnxPlayerDelay = [];
+						}
+						__ezcnxPlayerDelay.push('outstreamtracking');
+					} else {
+						__ez_outstream_player_tracking();
+					}
+					let railToClose = (__ezcnxPlayer.getFloatingSettings() && __ezcnxPlayer.getFloatingSettings().scrollPosition === 1) ? 'left' : 'right';
+					if (window.__ez_close_rail) {
+						if (__ezcnxPlayer.getPlayerType() !== 0) {
+							__ezcnxPlayer.once('adImpression', function(e) {
+								window.__ez_close_rail && __ez_close_rail('ez-sidebar-wall-' + railToClose);
+							});
+						} else if (__ezcnxPlayer.getFloatingSettings()) {
+							window.__ez_close_rail && __ez_close_rail('ez-sidebar-wall-' + railToClose);
+						}
+					}
+					
+				});
+			}
+		});
+	}, 3000);</script>
+<script type='text/javascript' style='display:none;' async>
+window.__ez_edge_a = false;
+window.__ez_edge_mw = 1600;
+window.__ez_edge_v = 'top';
+window.__ez_edge_h = 'inner';
+window.__ez_edge_m = 0;
+__ez.queue.addFile('/detroitchicago/sidebarwall.js', '/detroitchicago/sidebarwall.js?gcb=0&cb=18', false, [], true, true, true, false);</script>
+<script>setTimeout(function(){let cookieTest=getCookie("ezvignetteviewed");if(cookieTest==""){window.googletag=window.googletag||{};googletag.cmd=googletag.cmd||[];googletag.cmd.push(function(){if(ezslot_interstitial==null){return;}
+googletag.display(ezslot_interstitial);googletag.pubads().refresh([ezslot_interstitial]);});}},1000);function getCookie(cname){let name=cname+"=";let ca=document.cookie.split(';');for(let i=0;i<ca.length;i++){let c=ca[i];while(c.charAt(0)==' '){c=c.substring(1);}
+if(c.indexOf(name)==0){return c.substring(name.length,c.length);}}
+return "";}</script>
+<script type="text/javascript" data-cfasync="false"></script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script><script type='text/javascript' style='display:none;' async>
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7ab664b0883f2687","version":"2023.2.0","r":1,"token":"eddb9b175761487a82f8e7a87f233a77","si":100}' crossorigin="anonymous"></script>
+</body></html>
